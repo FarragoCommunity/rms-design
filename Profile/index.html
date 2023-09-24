@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Profile</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- HTML in your document's head -->
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+
+    <style>
+      :root {
+        font-family: "Inter", sans-serif;
+      }
+
+      @supports (font-variation-settings: normal) {
+        :root {
+          font-family: "Inter var", sans-serif;
+        }
+      }
+
+      ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(146, 141, 141, 0.3);
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: rgba(190, 189, 189, 0.8);
+        -webkit-box-shadow: inset 0 0 6px rgba(102, 99, 99, 0.5);
+      }
+      ::-webkit-scrollbar-thumb:window-inactive {
+        background: rgba(204, 178, 178, 0.4);
+      }
+    </style>
+  </head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.config.js"></script>
+
+  <body class="bg-background">
+    <main class="font-sans h-screen overflow-hidden flex">
+      <!-- Student -->
+      <div
+        class="h-screen md:w-72 md:min-w-72 lg:w-96 lg:min-w-96 w-screen bg-color1 overflow-hidden md:flex md:flex-col md:justify-between md:items-center hidden md:block"
+      >
+        <div
+          class="h-64 w-40 md:bg-white bg-transparent md:flex md:flex-col md:items-center flex flex-col items-center mx-auto pt-44 md:pt-0"
+        >
+          <div
+            class="text-2xl md:mx-5 md:pt-24 pt-28 text-color1 relative z-40"
+          >
+            <button
+              class="cursor-text bg-chronicle h-3 w-3 rounded-full hidden md:block float-right mt-3 mr-8"
+            ></button>
+            <h1 class="text-transparent md:text-color1">Team</h1>
+            <h1 class="font-bold hidden md:block text-color1 -mt-2">
+              Chronicle
+            </h1>
+          </div>
+          <div
+            class="md:h-48 md:w-48 lg:h-52 lg:w-52 h-28 w-28 bg-white md:mt-8 -mt-44 rounded-full relative z-20 hidden md:block"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3NjA4Mjc3NHx8ZW58MHx8fHx8&w=1000&q=80"
+              alt="Student's Photo"
+              class="rounded-full h-full object-cover outline outline-3 outline-white"
+            />
+
+            <div
+              class="bg-white h-5 w-16 mx-auto relative z-40 md:-mt-2 -mt-4 rounded rounded-lg outline outline-1"
+            >
+              <h1 class="text-center font-black text-color1 text-sm">313</h1>
+            </div>
+          </div>
+          <div class="w-full h-96 md:block text-white mt-8 hidden">
+            <h1 class="text-center text-xl font-bold">MUHAMMED</h1>
+            <h1 class="text-center text-xl font-bold -mt-2">NIHAL PA</h1>
+            <h2 class="text-center text-lg">DEGREE</h2>
+          </div>
+        </div>
+
+        <div class="">
+          <!-- current -->
+          <div
+            class="bg-white md:w-48 md:h-36 h-full w-full mx-auto md:rounded-t-3xl rounded-t-xlarge relative z-0 -mt-0 md:mt-0 hidden md:block"
+          >
+            <div class="">
+              <div class="flex md:flex-col md:items-center">
+                <div class="ml-8 mt-8 md:hidden w-40">
+                  <h1 class="text-tn bigphone:text-sm">Candidate Details</h1>
+                  <h1 class="font-bold text-xl bigphone:text-3xl -mt-1">
+                    MUAHMMED
+                  </h1>
+                  <h1 class="font-bold text-xl bigphone:text-3xl -mt-1">
+                    NIHAL PA
+                  </h1>
+                  <p class="text-lt bigphone:text-base">Senior Secondary</p>
+                  <p class="text-lt bigphone:text-base -mt-1">Team Tribune</p>
+                </div>
+                <div
+                  class="bg-color1 w-32 h-8 rounded-full mt-5 hidden md:block"
+                >
+                  <h1 class="text-white font-bold text-center text-sm mt-2">
+                    Current Status
+                  </h1>
+                </div>
+              </div>
+              <div
+                class="flex flex-row justify-around md:-mt-2 -mt-20 bigphone:-mt-32 float-right md:float-none grid-row gap-5 mr-6 md:grid-row-none md:mr-0"
+              >
+                <div
+                  class="md:bg-transparent bg-background md:h-16 md:w-16 bigphone:h-20 h-16 bigphone:w-20 w-16 rounded-xl"
+                >
+                  <h1
+                    class="font-bold text-center md:text-5xl text-3xl bigphone:text-4xl mt-1"
+                  >
+                    25
+                  </h1>
+                  <p class="text-lt text-center -mt-2">Arts</p>
+                </div>
+                <div
+                  class="md:bg-transparent bg-background md:h-16 md:w-16 bigphone:h-20 w-16 bigphone:w-20 h-16 rounded-xl"
+                >
+                  <h1
+                    class="font-bold text-center md:text-5xl text-3xl bigphone:text-4xl mt-1"
+                  >
+                    32
+                  </h1>
+                  <p class="text-lt text-center -mt-2">Sports</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile Desktop -->
+      <div class="hidden md:hidden lg:block w-full h-screen">
+        <div class="flex h-1/6 items-end">
+          <h1 class="text-color1 font-extrabold text-6xl ml-10">Profile</h1>
+        </div>
+        <div
+          class="cards mx-10 flex content-around gap-10 md:hidden lg:flex h-5/6 pt-10"
+        >
+          <div class="bg-white h-5/6 w-1/2 rounded-3xl overflow-hidden">
+            <h1 class="text-3xl text-color1 font-bold mx-5 mt-5">Programs</h1>
+            <hr class="border" />
+            <div class="mx-5 py-3 flex gap-3">
+              <button class="bg-color1 h-6 rounded-xl outline outline-1">
+                <p class="px-2 text-white font-bold">All</p>
+              </button>
+
+              <button class="bg-transparent h-6 rounded-xl outline outline-1">
+                <p class="px-2 text-color1">Individual</p>
+              </button>
+
+              <button class="bg-transparent h-6 rounded-xl outline outline-1">
+                <p class="px-2 text-color1">Group</p>
+              </button>
+            </div>
+            <hr class="border" />
+            <!-- list -->
+            <div
+              class="mx-5 flex flex-col items-center overflow-y-auto gap-5 h-41/50 py-5"
+            >
+              <!-- 1 -->
+              <div
+                class="h-12 rounded-xl w-full bg-background flex flex-row justify-between text-sm px-5"
+              >
+                <h1 class="mt-4">SMJ123</h1>
+                <h1 class="mt-4">Balloon Breaking</h1>
+                <div class="text-lt flex flex-col items-end mt-2">
+                  <p>7:00 pm</p>
+                  <p>19-09-2023</p>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div
+                class="h-12 rounded-xl w-full bg-background flex flex-row justify-between text-sm px-5"
+              >
+                <h1 class="mt-4">SMJ123</h1>
+                <h1 class="mt-4">Balloon Breaking</h1>
+                <div class="text-lt flex flex-col items-end mt-2">
+                  <p>7:00 pm</p>
+                  <p>19-09-2023</p>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div
+                class="h-12 rounded-xl w-full bg-background flex flex-row justify-between text-sm px-5"
+              >
+                <h1 class="mt-4">SMJ123</h1>
+                <h1 class="mt-4">Balloon Breaking</h1>
+                <div class="text-lt flex flex-col items-end mt-2">
+                  <p>7:00 pm</p>
+                  <p>19-09-2023</p>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div
+                class="h-12 rounded-xl w-full bg-background flex flex-row justify-between text-sm px-5"
+              >
+                <h1 class="mt-4">SMJ123</h1>
+                <h1 class="mt-4">Balloon Breaking</h1>
+                <div class="text-lt flex flex-col items-end mt-2">
+                  <p>7:00 pm</p>
+                  <p>19-09-2023</p>
+                </div>
+              </div>
+              <!-- 5 -->
+              <div
+                class="h-12 rounded-xl w-full bg-background flex flex-row justify-between text-sm px-5"
+              >
+                <h1 class="mt-4">SMJ123</h1>
+                <h1 class="mt-4">Balloon Breaking</h1>
+                <div class="text-lt flex flex-col items-end mt-2">
+                  <p>7:00 pm</p>
+                  <p>19-09-2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white h-5/6 w-2/3 rounded-3xl overflow-hidden">
+            <h1 class="text-3xl text-color1 font-bold mx-5 mt-5">Results</h1>
+            <hr class="border" />
+            <div class="mx-5 py-3 flex gap-3">
+              <button class="bg-color1 h-6 rounded-xl outline outline-1">
+                <p class="px-2 text-white font-bold">All</p>
+              </button>
+
+              <button class="bg-transparent h-6 rounded-xl outline outline-1">
+                <p class="px-2 text-color1">Individual</p>
+              </button>
+
+              <button class="bg-transparent h-6 rounded-xl outline outline-1">
+                <p class="px-2 text-color1">Group</p>
+              </button>
+            </div>
+            <hr class="border" />
+            <!-- list -->
+            <div
+              class="mx-5 flex flex-col items-center overflow-y-auto gap-5 h-41/50 pt-5"
+            >
+              <!-- 1 -->
+              <div
+                class="h-12 rounded-xl w-full bg-background flex flex-row justify-between text-sm items-center px-5"
+              >
+                <div class="flex gap-8 text-sm">
+                  <h1 class="">SMJ123</h1>
+                  <h1 class="">Balloon Breaking</h1>
+                </div>
+                <div class="text-sm flex gap-2 flex-row items-end -pt-2 ml-24">
+                  <p>1st</p>
+                  <p>NIL</p>
+                  <p>3pts</p>
+                </div>
+              </div>
+
+              <!-- 2 -->
+
+              <div
+                class="h-12 rounded-xl w-full bg-background flex flex-row justify-between text-sm items-center px-5"
+              >
+                <div class="flex gap-8 text-sm">
+                  <h1 class="">SMJ123</h1>
+                  <h1 class="">Balloon Breaking</h1>
+                </div>
+                <div class="text-sm flex gap-2 flex-row items-end -pt-2 ml-24">
+                  <p>1st</p>
+                  <p>NIL</p>
+                  <p>3pts</p>
+                </div>
+              </div>
+
+              <!-- 3 -->
+              <div
+                class="h-12 rounded-xl w-full bg-background flex flex-row justify-between text-sm items-center px-5"
+              >
+                <div class="flex gap-8 text-sm">
+                  <h1 class="">SMJ123</h1>
+                  <h1 class="">Balloon Breaking</h1>
+                </div>
+                <div class="text-sm flex gap-2 flex-row items-end -pt-2 ml-24">
+                  <p>1st</p>
+                  <p>NIL</p>
+                  <p>3pts</p>
+                </div>
+              </div>
+
+              <!-- 4 -->
+
+              <div
+                class="h-12 rounded-xl w-full bg-background flex flex-row justify-between text-sm items-center px-5"
+              >
+                <div class="flex gap-8 text-sm">
+                  <h1 class="">SMJ123</h1>
+                  <h1 class="">Balloon Breaking</h1>
+                </div>
+                <div class="text-sm flex gap-2 flex-row items-end -pt-2 ml-24">
+                  <p>1st</p>
+                  <p>NIL</p>
+                  <p>3pts</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile Ipad -->
+      <div class="lg:hidden hidden md:block w-full">
+        <!-- text -->
+        <div class="flex h-1/6 items-end">
+          <h1 class="text-color1 font-extrabold text-6xl ml-10">Profile</h1>
+        </div>
+        <!-- cards -->
+        <div
+          class="bg-white h-4/6 w-5/6 mx-10 rounded-3xl overflow-hidden mt-5"
+        >
+          <!-- slider -->
+          <div class="h-16 w-full flex items-center gap-5 justify-center">
+            <div class="bg-color1 border h-3/5 flex items-center rounded-2xl">
+              <h1 class="px-3 text-lg text-white font-bold">Programs</h1>
+            </div>
+
+            <div
+              class="bg-transparent border h-3/5 flex items-center rounded-2xl"
+            >
+              <h1 class="px-3 text-lg text-color1">Results</h1>
+            </div>
+          </div>
+          <hr class="border" />
+
+          <!-- buttons -->
+          <div class="h-10 w-full items-center flex px-5 gap-5">
+            <div class="bg-color1 border h-3/5 flex items-center rounded-2xl">
+              <h1 class="px-3 text-sm text-white font-bold">All</h1>
+            </div>
+
+            <div
+              class="bg-transparent border h-3/5 flex items-center rounded-2xl"
+            >
+              <h1 class="px-3 text-sm text-color1">Individual</h1>
+            </div>
+
+            <div
+              class="bg-transparent border h-3/5 flex items-center rounded-2xl"
+            >
+              <h1 class="px-3 text-sm text-color1">Group</h1>
+            </div>
+          </div>
+          <hr class="border" />
+
+          <!-- lists -->
+          <div
+            class="h-full w-full overflow-y-auto flex flex-col items-center py-3 gap-5"
+          >
+            <!-- programslist -->
+            <div
+              class="h-14 w-11/12 bg-background rounded-2xl flex items-center justify-between"
+            >
+              <!-- code -->
+              <div class="px-3">
+                <p class="">SMJ123</p>
+              </div>
+              <!-- name -->
+              <div class="px-3">
+                <p class="">Ballpon Breaking</p>
+              </div>
+              <!-- time -->
+              <div class="px-3 text-lt flex flex-col items-end">
+                <p class="">7:00 pm</p>
+                <p class="">19-09-2023</p>
+              </div>
+            </div>
+
+            <!-- resultslist -->
+            <div
+              class="h-14 w-11/12 bg-background rounded-2xl flex items-center justify-between"
+            >
+              <!-- code -->
+              <div class="px-3">
+                <p class="">SMJ123</p>
+              </div>
+              <!-- name -->
+              <div class="px-3">
+                <p class="">Ballpon Breaking</p>
+              </div>
+              <!-- result -->
+              <div class="px-3 text-lt flex items-end gap-5">
+                <p class="">1st</p>
+                <p class="">NIL</p>
+                <p class="">pts</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile Mobile -->
+      <div class="bg-color1 w-screen h-full md:hidden">
+        <!-- up -->
+        <div class="w-full h-1/12"></div>
+        <!-- down -->
+        <div class="w-full h-full bg-color1 flex flex-col items-center">
+          <!-- image -->
+          <div
+            class="w-full flex flex-col items-center items-start relative z-40"
+          >
+            <div
+              class="rounded-full h-36 w-36 border-4 bg-white flex flex-col items-end relative"
+            >
+              <img
+                class="rounded-full"
+                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3NjA4Mjc3NHx8ZW58MHx8fHx8&w=1000&q=80"
+                alt=""
+              />
+
+              <!-- Color -->
+              <div
+                class="bg-chronicle h-4 w-4 rounded-xl border-2 absolute left-5 z-50"
+              ></div>
+            </div>
+            <!-- chessNo -->
+            <div class="bg-white h-6 rounded-xl border-2 -mt-3 relative z-50">
+              <h1 class="text-sm px-2 font-bold">S313</h1>
+            </div>
+          </div>
+          <!-- card -->
+          <div
+            class="bg-white rounded-t-big h-full w-screen relative z-0 -mt-20 overflow-hidden"
+          >
+            <!-- details and score and slider -->
+            <div class="h-31/100 rounded-t-big flex flex-col justify-start">
+              <!-- details -->
+              <div class="flex items-center pt-16 pb-3 justify-center px-5">
+                <div class="h-1/2 w-1/2 flex flex-col items-start mx-5">
+                  <h1 class="text-tn bigphone:text-sm">Candidate Details</h1>
+                  <h1 class="font-bold text-xl bigphone:text-2xl -mt-1">
+                    MUAHMMED
+                  </h1>
+                  <h1 class="font-bold text-xl bigphone:text-2xl -mt-2">
+                    NIHAL PA
+                  </h1>
+                  <p class="text-lt bigphone:text-sm">Degree</p>
+                  <p class="text-lt bigphone:text-sm -mt-1">Team Tribune</p>
+                </div>
+                <!-- score -->
+                <div
+                  class="w-1/2 h-1/2 flex mr-5 gap-5 items-center justify-end"
+                >
+                  <!-- arts -->
+                  <div
+                    class="bg-background rounded-xl h-16 w-16 bigphone:h-20 bigphone:w-20 flex flex-col items-center"
+                  >
+                    <h1 class="text-3xl bigphone:text-4xl font-bold">25</h1>
+                    <p class="-mt-2 text-sm">Arts</p>
+                  </div>
+                  <!-- sports -->
+                  <div
+                    class="bg-background rounded-xl h-16 w-16 bigphone:h-20 bigphone:w-20 flex flex-col items-center"
+                  >
+                    <h1 class="text-3xl bigphone:text-4xl font-bold">25</h1>
+                    <p class="-mt-2 text-sm">Arts</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slider -->
+            <div
+              class="h-1/10 w-full flex items-center gap-5 justify-center pb-3"
+            >
+              <div class="bg-color1 border h-8 flex items-center rounded-2xl">
+                <h1 class="px-3 text-lg text-white font-bold">Programs</h1>
+              </div>
+
+              <div
+                class="bg-transparent border h-8 flex items-center rounded-2xl"
+              >
+                <h1 class="px-3 text-lg text-color1">Results</h1>
+              </div>
+            </div>
+            <!-- list & buttons -->
+            <div class="h-59/100 w-full overflow-y-auto">
+              <!-- buttons -->
+              <div class="h-[10%]">
+                <hr />
+                <div class="h-full w-full">
+                  <div class="h-full w-full items-center flex gap-5 justify-center">
+                    <div
+                      class="bg-color1 border h-6 flex items-center rounded-2xl"
+                    >
+                      <h1 class="px-3 text-sm text-white font-bold">All</h1>
+                    </div>
+
+                    <div
+                      class="bg-transparent border h-6 flex items-center rounded-2xl"
+                    >
+                      <h1 class="px-3 text-sm text-color1">Individual</h1>
+                    </div>
+
+                    <div
+                      class="bg-transparent border h-6 flex items-center rounded-2xl"
+                    >
+                      <h1 class="px-3 text-sm text-color1">Group</h1>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+              </div>
+              <!-- list -->
+              <div class="h-[80%] w-full flex flex-col items-center gap-2 pt-2">
+                <!-- 1 -->
+                <div
+                  class="h-10 w-[90%] bg-background rounded-2xl flex justify-between items-center px-3"
+                >
+                  <p class="text-lt">SM330</p>
+                  <p class="text-lt">Balloon Breaking</p>
+                  <div class="flex flex-col items-end">
+                    <p class="text-tn">7:00 pm</p>
+                    <p class="text-tn">19-09-2023</p>
+                  </div>
+                </div>
+                <!-- 2 -->
+                <div
+                  class="h-10 w-[90%] bg-background rounded-2xl flex justify-between items-center px-3"
+                >
+                  <p class="text-lt">SM330</p>
+                  <p class="text-lt">Balloon Breaking</p>
+                  <div class="flex items-end gap-2">
+                    <p class="text-tn">1st</p>
+                    <p class="text-tn">NIL</p>
+                    <p class="text-tn">3pts</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

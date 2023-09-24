@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              color1: "#0E0123",
+              color2: "#3F127A",
+              color4: "#D9D9D9",
+              background: "#E1DEFF",
+              chronicle: "#ff0000",
+              tribune: "#00ff73",
+              gazet: "",
+            },
+            spacing: {
+              footer: "-9rem",
+              "footer-mobile": "-14rem",
+              112: "50rem",
+              105: "44rem",
+              100: "40rem",
+              35: "8.7rem",
+              34.6: "8.25rem",
+              98: "26.2rem",
+              "41/50": "82%",
+              "3/20": "15%",
+              "1/12": "8%",
+              13: "3.25rem",
+              "7/8": "99%",
+              "1/20": "5%",
+              "31/100": "31%",
+              "59/100": " 59%",
+              "6/8": "96%",
+            },
+            strokeWidth: {
+              photo: "5px",
+            },
+            fontFamily: {
+              sans: [
+                "Inter var, sans-serif",
+                {
+                  fontFeatureSettings: '"cv11", "ss01"',
+                  fontVariationSettings: '"opsz" 32',
+                },
+              ],
+            },
+            fontSize: {
+              sm: "0.8rem",
+              base: "1rem",
+              xl: "1.25rem",
+              "2xl": "1.563rem",
+              "3xl": "1.953rem",
+              "4xl": "2.441rem",
+              "5xl": "3.052rem",
+              lt: "12px",
+              tn: "10px",
+              tn1: "9px",
+              tn2: "7px",
+            },
+            borderRadius: {
+              none: "0",
+              sm: "0.125rem",
+              DEFAULT: "0.25rem",
+              DEFAULT: "4px",
+              md: "0.375rem",
+              lg: "0.5rem",
+              full: "9999px",
+              big: "2rem",
+              large: "4rem",
+              xlarge: "5rem",
+            },
+            screens: {
+              tablet: "640px",
+              laptop: "1024px",
+              desktop: "1280px",
+              bigphone: "425px",
+            },
+            minWidth: {
+              "1/2": "50%",
+              96: "24rem",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <style>
+        /* CSS */
+        :root {
+            font-family: 'Inter', sans-serif;
+        }
+
+        @supports (font-variation-settings: normal) {
+            :root {
+                font-family: 'Inter var', sans-serif;
+            }
+        }
+    </style> -->
+    <title>Document</title>
+  </head>
+
+  <body class="flex flex-col">
+    <main class="bg-background w-screen h-screen">
+      <!-- Mobile View -->
+      <div class="flex flex-col w-full h-screen bg-[#0E0123] xl:hidden">
+        <p class="text-white text-lg font-semibold p-5">Program Details</p>
+
+        <div class="p-5 flex flex-col items-center">
+          <div class="flex flex-col w-screen px-5 bigphone:items-center">
+            <p class="text-white text-3xl bigphone:text-4xl font-semibold">Balloon Breaking</p>
+            <p class="text-white text-3xl bigphone:text-4xl font-semibold">MLM</p>
+          </div>
+          <div class="flex gap-2 mt-3">
+            <button
+              class="text-[#3F127A] text-xs bg-white rounded-xl px-2 py-[0.125rem] font-semibold"
+            >
+              Sports
+            </button>
+            <button
+              class="text-[#3F127A] text-xs bg-white rounded-xl px-2 py-[0.125rem] font-semibold"
+            >
+              Sports
+            </button>
+            <button
+              class="text-[#3F127A] text-xs bg-white rounded-xl px-2 py-[0.125rem] font-semibold"
+            >
+              Sports
+            </button>
+          </div>
+        </div>
+        <div class="w-full bg-white rounded-t-[3rem] h-full overflow-hidden">
+          <div class="flex mt-2 w-full justify-between p-5">
+            <div
+              class="flex flex-col aspect-auto w-40 h-32 bigphone:h-36 bigphone:w-48 bg-[#E1DEFF] rounded-3xl py-2 px-4 justify-center"
+            >
+              <p class="text-gray-600 text-lt bigphone:text-sm">Category</p>
+              <p class="text-[#3D127A] text-xl bigphone:2xl font-bold">Degree</p>
+              <div class="flex justify-between">
+                <div class="flex flex-col">
+                  <p class="text-lt bigphone:text-sm text-gray-500">Code</p>
+                  <p class="text-lt bigphone:text-sm text-[#3D127A] font-bold">SJ123</p>
+                </div>
+                <div class="flex flex-col">
+                  <p class="text-lt bigphone:text-sm text-gray-500">Candidate Count</p>
+                  <p class="text-lt bigphone:text-sm text-[#3D127A] font-bold ml-auto">04x2</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col aspect-auto w-40 h-32 bigphone:h-36 bigphone:w-48 bg-[#E1DEFF] rounded-3xl py-2 px-4 justify-center"
+            >
+              <p class="text-gray-600 text-lt bigphone:text-sm">Duration</p>
+              <div class="flex">
+                <p class="text-[#3D127A] text-xl bigphone:2xl font-bold">40</p>
+                <p class="text-[#3D127A] mt-auto text-lt bigphone:text-sm">mts</p>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex flex-col">
+                  <p class="text-lt bigphone:text-sm text-gray-500">Time</p>
+                  <p class="text-lt bigphone:text-sm text-[#3D127A] font-bold">07:30</p>
+                </div>
+                <div class="flex flex-col">
+                  <p class="text-lt bigphone:text-sm text-gray-500 ml-auto">Date</p>
+                  <p class="text-lt bigphone:text-sm text-[#3D127A] font-bold">23-10-2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center gap-2 mt-3">
+            <button
+              class="w-auto bg-white border-2 border-[#3D127A] text-[#3D127A] text-lg font-semibold rounded-3xl px-4"
+            >
+              Candidates
+            </button>
+            <button
+              class="w-auto bg-[#3D127A] text-white text-lg font-semibold rounded-3xl px-4"
+            >
+              Results
+            </button>
+          </div>
+          <hr class="border mt-2" />
+          <div class="flex justify-center gap-1 mt-2">
+            <button
+              class="w-auto bg-[#3D127A] text-white text-xs bigphone:text-base font-semibold rounded-3xl px-1 bigphone:px-2 h-6 bigphone:h-8"
+            >
+              All
+            </button>
+            <button
+              class="w-auto bg-white border border-[#3D127A] text-[#3D127A] text-xs bigphone:text-base font-semibold rounded-3xl px-1 bigphone:px-2 h-6 bigphone:h-8"
+            >
+              Chronicle
+            </button>
+            <button
+              class="w-auto bg-white border border-[#3D127A] text-[#3D127A] text-xs bigphone:text-base font-semibold rounded-3xl px-1 bigphone:px-2 h-6 bigphone:h-8"
+            >
+              Tribune
+            </button>
+            <button
+              class="w-auto bg-white border border-[#3D127A] text-[#3D127A] text-xs bigphone:text-base font-semibold rounded-3xl px-1 bigphone:px-2 h-6 bigphone:h-8"
+            >
+              Gazette
+            </button>
+            <button
+              class="w-auto bg-white border border-[#3D127A] text-[#3D127A] text-xs bigphone:text-base font-semibold rounded-3xl px-1 bigphone:px-2 h-6 bigphone:h-8"
+            >
+              Herald
+            </button>
+          </div>
+          <hr class="border mt-2" />
+
+          <div class="flex flex-col h-5/6 pt-2">
+            <div class="flex flex-col gap-2 px-5 h-[70%] overflow-y-auto">
+              <!-- program list -->
+              <div class="w-full bg-[#E1DEFF] h-8 bigphone:h-16 rounded-lg flex gap-2">
+                <div
+                  class="flex h-8 bigphone:h-16 w-1/2 text-tn bigphone:text-sm items-center pl-2 gap-3 justify-start"
+                >
+                  <p>1st</p>
+                  <p>S123</p>
+                  <p>Muhammed Midlaj</p>
+                </div>
+
+                <div
+                  class="flex h-8 bigphone:h-16 w-1/2 text-tn bigphone:text-sm items-center pr-2 gap-3 justify-end"
+                >
+                  <p>Chronicle</p>
+                  <p>A</p>
+                  <p>3pts</p>
+                </div>
+              </div>
+              <!-- candidate list -->
+              <div class="w-full bg-[#E1DEFF] h-8 bigphone:h-16 rounded-lg flex gap-2">
+                <div
+                  class="flex h-8 bigphone:h-16 w-1/2 text-tn bigphone:text-sm items-center pl-2 gap-3 justify-start"
+                >
+                  <img
+                    src="1575462484669.jpg"
+                    class="rounded-full h-5 border"
+                    alt=""
+                  />
+                  <p>S123</p>
+                  <p>Muhammed Midlaj</p>
+                </div>
+
+                <div
+                  class="flex h-8 bigphone:h-16 w-1/2 text-tn bigphone:text-sm items-center pr-2 gap-3 justify-end"
+                >
+                  <p>Chronicle</p>
+                </div>
+              </div>
+              <!-- end -->
+            </div>
+          </div>
+        </div>
+        <!-- bottom -->
+      </div>
+
+      <!-- Tab View -->
+      <div class="xl:flex h-full w-full hidden 2xl:hidden">
+        <!-- sidebar -->
+        <div
+          class="flex flex-col h-full w-72 min-w-[18rem] bg-color1 justify-center items-center gap-3"
+        >
+          <h1 class="text-white text-5xl px-3 leading-tight font-bold">
+            Program Details
+          </h1>
+          <div class="flex flex-col w-full pl-4">
+            <label for="1" class="text-background text-sm pl-2">Name</label>
+            <input
+              type="text"
+              name="1"
+              disabled
+              class="h-10 w-11/12 bg-white rounded-lg text-md placeholder:pl-2 placeholder:text-color1"
+              placeholder="Muhammed Midlaj"
+            />
+          </div>
+          <div class="flex w-full px-4">
+            <div class="flex flex-col w-1/3">
+              <label for="1" class="text-background text-sm pl-2">Code</label>
+              <input
+                type="text"
+                name="1"
+                disabled
+                class="h-10 w-11/12 bg-white rounded-lg text-md placeholder:pl-2 placeholder:text-color1"
+                placeholder="SM123"
+              />
+            </div>
+            <div class="flex flex-col w-2/3">
+              <label for="1" class="text-background text-sm pl-2"
+                >Candidate Count</label
+              >
+              <input
+                type="text"
+                name="1"
+                disabled
+                class="h-10 w-11/12 bg-white rounded-lg text-md placeholder:pl-2 placeholder:text-color1"
+                placeholder="04"
+              />
+            </div>
+          </div>
+
+          <div class="flex flex-col w-full pl-4">
+            <label for="1" class="text-background text-sm pl-2">Category</label>
+            <input
+              type="text"
+              name="1"
+              disabled
+              class="h-10 w-11/12 bg-white rounded-lg text-md placeholder:pl-2 placeholder:text-color1"
+              placeholder="Degree"
+            />
+          </div>
+          <div class="flex flex-col w-full pl-4">
+            <label for="1" class="text-background text-sm pl-2">Duration</label>
+            <input
+              type="text"
+              name="1"
+              disabled
+              class="h-10 w-11/12 bg-white rounded-lg text-md placeholder:pl-2 placeholder:text-color1"
+              placeholder="40 Min"
+            />
+          </div>
+
+          <div class="flex flex-col w-full pl-4">
+            <label for="1" class="text-background text-sm pl-2"
+              >Date and Time</label
+            >
+            <input
+              type="text"
+              name="1"
+              disabled
+              class="h-10 w-11/12 bg-white rounded-lg text-md placeholder:pl-2 placeholder:text-color1"
+              placeholder="7:00 - 8:00 PM, 20-10-2023"
+            />
+          </div>
+          <div class="flex w-full px-4">
+            <div class="flex flex-col w-1/3">
+              <label for="1" class="text-background text-sm pl-2">Mode</label>
+              <input
+                type="text"
+                name="1"
+                disabled
+                class="h-10 w-11/12 bg-white rounded-lg text-md placeholder:pl-2 placeholder:text-color1"
+                placeholder="Arts"
+              />
+            </div>
+            <div class="flex flex-col w-1/3">
+              <label for="1" class="text-background text-sm pl-2">Model</label>
+              <input
+                type="text"
+                name="1"
+                disabled
+                class="h-10 w-11/12 bg-white rounded-lg text-md placeholder:pl-2 placeholder:text-color1"
+                placeholder="Stage"
+              />
+            </div>
+            <div class="flex flex-col w-1/3">
+              <label for="1" class="text-background text-sm pl-2">Type</label>
+              <input
+                type="text"
+                name="1"
+                disabled
+                class="h-10 w-11/12 bg-white rounded-lg text-md placeholder:pl-2 placeholder:text-color1"
+                placeholder="Single"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col h-full w-full justify-center px-5">
+          <h1 class="text-5xl font-semibold pl-5">Detailed View</h1>
+          <!-- Card -->
+          <div
+            class="flex flex-col w-10/11 h-5/6 bg-white rounded-big overflow-hidden pb-10 pt-4"
+          >
+            <!-- sliders -->
+            <div class="flex h-16 justify-center items-center gap-5">
+              <div
+                class="rounded-xl text-sm h-8 bg-color1 border border-color1 flex items-center"
+              >
+                <p class="px-3 text-white text-lg">Programs</p>
+              </div>
+              <div
+                class="rounded-xl text-sm h-8 border border-color1 flex items-center"
+              >
+                <p class="px-3 text-color1 text-lg">Results</p>
+              </div>
+            </div>
+            <hr class="border" />
+            <!-- sort buttons -->
+            <div class="flex h-10 items-center px-10 gap-3">
+              <div
+                class="rounded-xl text-sm h-6 bg-color1 border border-color1 flex items-center"
+              >
+                <p class="px-2 text-white text-sm">All</p>
+              </div>
+              <div
+                class="rounded-xl text-sm h-6 border border-color1 flex items-center"
+              >
+                <p class="px-2 text-color1 text-sm">Chronicle</p>
+              </div>
+              <div
+                class="rounded-xl text-sm h-6 border border-color1 flex items-center"
+              >
+                <p class="px-2 text-color1 text-sm">Tribune</p>
+              </div>
+              <div
+                class="rounded-xl text-sm h-6 border border-color1 flex items-center"
+              >
+                <p class="px-2 text-color1 text-sm">Gazette</p>
+              </div>
+              <div
+                class="rounded-xl text-sm h-6 border border-color1 flex items-center"
+              >
+                <p class="px-2 text-color1 text-sm">Herald</p>
+              </div>
+            </div>
+            <hr class="border" />
+            <!-- table -->
+            <div class="flex flex-col h-full items-center pt-5 mt-5 gap-5 overflow-y-auto">
+              <!-- program List -->
+              <div class="flex items-center h-16 min-h-[4rem] bg-background w-11/12 rounded-xl">
+                <div
+                  class="flex h-8 w-1/2 text-sm items-center pl-2 gap-3 justify-start"
+                >
+                  <p>1st</p>
+                  <p>S123</p>
+                  <p>Muhammed Midlaj</p>
+                </div>
+
+                <div
+                  class="flex h-8 w-1/2 text-sm items-center pr-2 gap-3 justify-end"
+                >
+                  <p>Chronicle</p>
+                  <p>A</p>
+                  <p>3pts</p>
+                </div>
+              </div>
+              <!-- candidate List -->
+              <div class="flex items-center h-16 min-h-[4rem] bg-background w-11/12 rounded-xl">
+                <div
+                  class="flex h-8 w-1/2 text-sm items-center pl-2 gap-3 justify-start"
+                >
+                  <img
+                    src="1575462484669.jpg"
+                    class="rounded-full h-8 border"
+                    alt=""
+                  />
+                  <p>S123</p>
+                  <p>Muhammed Midlaj</p>
+                </div>
+
+                <div
+                  class="flex h-8 w-1/2 text-sm items-center pr-2 gap-3 justify-end"
+                >
+                  <p>Chronicle</p>
+                </div>
+              </div>
+              
+              <!-- end -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desktop View -->
+      <div class="2xl:flex h-full w-full hidden">
+        <!-- sidebar -->
+        <div
+          class="flex flex-col h-full w-[30rem] min-w-[18rem] bg-color1 justify-center items-start gap-3 pl-5"
+        >
+          <h1 class="text-white text-4xl px-3 leading-tight font-bold">
+            Program Details
+          </h1>
+          <div class="flex flex-col w-full pl-4">
+            <label for="1" class="text-background text-sm pl-2">Name</label>
+            <input
+              type="text"
+              name="1"
+              disabled
+              class="h-10 w-11/12 bg-white rounded-lg text-md placeholder:pl-2 placeholder:text-color1"
+              placeholder="Muhammed Midlaj"
+            />
+          </div>
+          <div class="flex w-full px-4">
+            <div class="flex flex-col w-1/3">
+              <label for="1" class="text-background text-sm pl-2">Code</label>
+              <input
+                type="text"
+                name="1"
+                disabled
+                class="h-10 w-11/12 bg-white rounded-lg text-md placeholder:pl-2 placeholder:text-color1"
+                placeholder="SM123"
+              />
+            </div>
+            <div class="flex flex-col w-2/3">
+              <label for="1" class="text-background text-sm pl-2"
+                >Candidate Count</label
+              >
+              <input
+                type="text"
+                name="1"
+                disabled
+                class="h-10 w-11/12 bg-white rounded-lg text-md placeholder:pl-2 placeholder:text-color1"
+                placeholder="04"
+              />
+            </div>
+          </div>
+
+          <div class="flex flex-col w-full pl-4">
+            <label for="1" class="text-background text-sm pl-2">Category</label>
+            <input
+              type="text"
+              name="1"
+              disabled
+              class="h-10 w-11/12 bg-white rounded-lg text-md placeholder:pl-2 placeholder:text-color1"
+              placeholder="Degree"
+            />
+          </div>
+          <div class="flex flex-col w-full pl-4">
+            <label for="1" class="text-background text-sm pl-2">Duration</label>
+            <input
+              type="text"
+              name="1"
+              disabled
+              class="h-10 w-11/12 bg-white rounded-lg text-md placeholder:pl-2 placeholder:text-color1"
+              placeholder="40 Min"
+            />
+          </div>
+
+          <div class="flex flex-col w-full pl-4">
+            <label for="1" class="text-background text-sm pl-2"
+              >Date and Time</label
+            >
+            <input
+              type="text"
+              name="1"
+              disabled
+              class="h-10 w-11/12 bg-white rounded-lg text-md placeholder:pl-2 placeholder:text-color1"
+              placeholder="7:00 - 8:00 PM, 20-10-2023"
+            />
+          </div>
+          <div class="flex w-full px-4">
+            <div class="flex flex-col w-1/3">
+              <label for="1" class="text-background text-sm pl-2">Mode</label>
+              <input
+                type="text"
+                name="1"
+                disabled
+                class="h-10 w-11/12 bg-white rounded-lg text-md placeholder:pl-2 placeholder:text-color1"
+                placeholder="Arts"
+              />
+            </div>
+            <div class="flex flex-col w-1/3">
+              <label for="1" class="text-background text-sm pl-2">Model</label>
+              <input
+                type="text"
+                name="1"
+                disabled
+                class="h-10 w-11/12 bg-white rounded-lg text-md placeholder:pl-2 placeholder:text-color1"
+                placeholder="Stage"
+              />
+            </div>
+            <div class="flex flex-col w-1/3">
+              <label for="1" class="text-background text-sm pl-2">Type</label>
+              <input
+                type="text"
+                name="1"
+                disabled
+                class="h-10 w-11/12 bg-white rounded-lg text-md placeholder:pl-2 placeholder:text-color1"
+                placeholder="Single"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- main -->
+        <div class="flex flex-col h-full w-full justify-center px-10 pt-20">
+          <h1 class="text-5xl font-semibold pl-5">Detailed View</h1>
+          <!-- Card -->
+          <div class="flex h-full w-full gap-10 overflow-hidden">
+            <!-- Candidates Card -->
+            <div class="flex h-full w-1/2 overflow-y-auto">
+              <div
+                class="flex flex-col w-full h-5/6 bg-white rounded-big  pb-10 pt-4"
+              >
+                <!-- sliders -->
+                <div class="flex h-16 justify-start items-center gap-5 px-8">
+                  <p class="px-3 text-color1 font-bold text-4xl">Candidates</p>
+                </div>
+                <hr class="border" />
+                <!-- sort buttons -->
+                <div class="flex h-10 items-center px-10 gap-3">
+                  <div
+                    class="rounded-xl text-sm h-6 bg-color1 border border-color1 flex items-center"
+                  >
+                    <p class="px-2 text-white text-sm">All</p>
+                  </div>
+                  <div
+                    class="rounded-xl text-sm h-6 border border-color1 flex items-center"
+                  >
+                    <p class="px-2 text-color1 text-sm">Chronicle</p>
+                  </div>
+                  <div
+                    class="rounded-xl text-sm h-6 border border-color1 flex items-center"
+                  >
+                    <p class="px-2 text-color1 text-sm">Tribune</p>
+                  </div>
+                  <div
+                    class="rounded-xl text-sm h-6 border border-color1 flex items-center"
+                  >
+                    <p class="px-2 text-color1 text-sm">Gazette</p>
+                  </div>
+                  <div
+                    class="rounded-xl text-sm h-6 border border-color1 flex items-center"
+                  >
+                    <p class="px-2 text-color1 text-sm">Herald</p>
+                  </div>
+                </div>
+                <hr class="border" />
+                <!-- table -->
+                <div class="flex flex-col h-5/6 items-center pt-5 gap-5 overflow-y-auto">
+                  <!-- candidate List -->
+                  <div
+                    class="flex items-center h-16 min-h-[4rem] bg-background w-11/12 rounded-xl"
+                  >
+                    <div
+                      class="flex h-8 w-1/2 text-md items-center pl-2 gap-3 justify-start"
+                    >
+                      <img
+                        src="1575462484669.jpg"
+                        class="rounded-full h-10 border"
+                        alt=""
+                      />
+                      <p>S123</p>
+                      <p>Muhammed Midlaj</p>
+                    </div>
+
+                    <div
+                      class="flex h-8 w-1/2 text-md items-center pr-2 gap-3 justify-end"
+                    >
+                      <p>Chronicle</p>
+                    </div>
+                  </div>
+                  <!-- end -->
+                </div>
+              </div>
+            </div>
+            <!-- Results Card -->
+            <div class="flex h-full w-1/2 overflow-y-auto">
+              <div
+                class="flex flex-col w-full h-5/6 bg-white rounded-big pb-10 pt-4"
+              >
+                <!-- sliders -->
+                <div class="flex h-16 justify-start items-center gap-5 px-8">
+                  <p class="px-3 text-color1 font-bold text-4xl">Results</p>
+                </div>
+                <hr class="border" />
+                <!-- sort buttons -->
+                <div class="flex h-10 items-center px-10 gap-3">
+                  <div
+                    class="rounded-xl text-sm h-6 bg-color1 border border-color1 flex items-center"
+                  >
+                    <p class="px-2 text-white text-sm">All</p>
+                  </div>
+                  <div
+                    class="rounded-xl text-sm h-6 border border-color1 flex items-center"
+                  >
+                    <p class="px-2 text-color1 text-sm">Chronicle</p>
+                  </div>
+                  <div
+                    class="rounded-xl text-sm h-6 border border-color1 flex items-center"
+                  >
+                    <p class="px-2 text-color1 text-sm">Tribune</p>
+                  </div>
+                  <div
+                    class="rounded-xl text-sm h-6 border border-color1 flex items-center"
+                  >
+                    <p class="px-2 text-color1 text-sm">Gazette</p>
+                  </div>
+                  <div
+                    class="rounded-xl text-sm h-6 border border-color1 flex items-center"
+                  >
+                    <p class="px-2 text-color1 text-sm">Herald</p>
+                  </div>
+                </div>
+                <hr class="border" />
+                <!-- table -->
+                <div class="flex flex-col h-5/6 items-center pt-5 gap-5 overflow-y-auto">
+                  <!-- program List -->
+                  <div
+                    class="flex items-center h-16 min-h-[4rem] bg-background w-11/12 rounded-xl"
+                  >
+                    <div
+                      class="flex h-8 w-1/2 text-md items-center pl-2 gap-3 justify-start"
+                    >
+                      <p>1st</p>
+                      <p>S123</p>
+                      <p>Muhammed Midlaj</p>
+                    </div>
+
+                    <div
+                      class="flex h-8 w-1/2 text-md items-center pr-2 gap-3 justify-end"
+                    >
+                      <p>Chronicle</p>
+                      <p>A</p>
+                      <p>3pts</p>
+                    </div>
+                  </div>
+                  <!-- end -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
