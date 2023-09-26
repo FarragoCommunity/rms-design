@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link rel="preconnect" href="https://rsms.me/" />
+    <style>
+      :root {
+        font-family: "Inter", sans-serif;
+      }
+
+      @supports (font-variation-settings: normal) {
+        :root {
+          font-family: "Inter var", sans-serif;
+        }
+      }
+
+      ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(146, 141, 141, 0.3);
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: rgba(190, 189, 189, 0.8);
+        -webkit-box-shadow: inset 0 0 6px rgba(102, 99, 99, 0.5);
+      }
+      ::-webkit-scrollbar-thumb:window-inactive {
+        background: rgba(204, 178, 178, 0.4);
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              color1: "#0E0123",
+              color2: "#3F127A",
+              color4: "#D9D9D9",
+              background: "#E1DEFF",
+              chronicle: "#ff0000",
+              tribune: "#00ff73",
+              gazet: "",
+            },
+            spacing: {
+              footer: "-9rem",
+              "footer-mobile": "-14rem",
+              112: "50rem",
+              105: "44rem",
+              100: "40rem",
+              35: "8.7rem",
+              34.6: "8.25rem",
+              98: "26.2rem",
+              "41/50": "82%",
+              "3/20": "15%",
+              "1/12": "8%",
+              13: "3.25rem",
+              "7/8": "99%",
+              "1/20": "5%",
+              "31/100": "31%",
+              "59/100": " 59%",
+              "6/8": "96%",
+            },
+            strokeWidth: {
+              photo: "5px",
+            },
+            fontFamily: {
+              sans: [
+                "Inter var, sans-serif",
+                {
+                  fontFeatureSettings: '"cv11", "ss01"',
+                  fontVariationSettings: '"opsz" 32',
+                },
+              ],
+            },
+            fontSize: {
+              sm: "0.8rem",
+              base: "1rem",
+              xl: "1.25rem",
+              "2xl": "1.563rem",
+              "3xl": "1.953rem",
+              "4xl": "2.441rem",
+              "5xl": "3.052rem",
+              lt: "12px",
+              tn: "10px",
+              tn1: "9px",
+              tn2: "7px",
+            },
+            borderRadius: {
+              none: "0",
+              sm: "0.125rem",
+              DEFAULT: "0.25rem",
+              DEFAULT: "4px",
+              md: "0.375rem",
+              lg: "0.5rem",
+              full: "9999px",
+              big: "2rem",
+              large: "4rem",
+              xlarge: "5rem",
+            },
+            screens: {
+              tablet: "640px",
+              laptop: "1024px",
+              desktop: "1280px",
+              bigphone: "425px",
+            },
+            minWidth: {
+              "1/2": "50%",
+              96: "24rem",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <main class="bg-color1 lg:bg-background">
+      <!-- Mobile View -->
+      <div
+        class="h-screen w-screen font-sans overflow-hidden flex flex-col gap-4 lg:hidden pt-5"
+      >
+        <!-- Page Name -->
+        <div class="h- w-full flex items-star">
+          <h1 class="text-base font-semibold px-6 text-white">Result Page</h1>
+        </div>
+        <!-- heading -->
+        <div class="h- flex items-center pt-5 justify-center">
+          <h1 class="text-3xl font-semibold px-6 text-white leading-none">
+            #Live Results
+          </h1>
+        </div>
+        <!-- judge Card -->
+        <div class="bg-white h-[95%] w-full rounded-t-large">
+          <!-- all -->
+          <div class="h-[84%] w-full pt-8 leading-tight text-center">
+            <!-- titles -->
+            <div class="h-[14%]">
+              <h1 class="text-2xl font-extrabold px-6 text-color1">
+                Ballon D'or Malayalam
+              </h1>
+              <h1 class="text-xl font-bold px-6 text-[#3757AA]">
+                Thanawiyya Urdu
+              </h1>
+            </div>
+            <!-- photos -->
+            <div class="h-[100%] overflow-y-auto pb-5 md:mt-10">
+              <div class="flex justify-center">
+                <!-- first -->
+                <div class="relative md:h-72 md:w-72 h-64 w-64 mt-5 md:mt-0">
+                  <div
+                    class="bg-green-500 md:h-8 md:w-8 h-5 w-5 rounded-full absolute left-1/2 translate-x-8 top-[2%] flex justify-center items-center"
+                  >
+                    <h1
+                      class="text-[10px] md:text-base font-semibold text-white"
+                    >
+                      #1
+                    </h1>
+                  </div>
+                  <div
+                    class="bg-green-500 h-4 md:h-6 rounded-xl absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-3 md:top-[25%] md:translate-y-[7.6rem] flex justify-center items-center"
+                  >
+                    <h1
+                      class="text-[8px] md:text-sm font-semibold text-white px-2"
+                    >
+                      SJM454
+                    </h1>
+                  </div>
+                  <img
+                    src="https://media.licdn.com/dms/image/C4D03AQH5Ca0xlOg1DQ/profile-displayphoto-shrink_800_800/0/1575462484669?e=2147483647&v=beta&t=jHUStIpRsbw_jI4gvb1mkFefcbX-mcWOrOPKYy2-CG4"
+                    class="rounded-full md:h-52 h-32 mx-auto border-2 border-white"
+                    alt=""
+                  />
+                  <h1 class="md:text-base text-xs mt-2 md:mt-4">
+                    Muhammed Midlaj AV
+                  </h1>
+                  <h1 class="text-[10px] md:text-xs">
+                    Team <span class="font-bold">Chronicle</span>
+                  </h1>
+                  <h1 class="text-[10px] md:text-xs font-semibold">Grade A</h1>
+                </div>
+              </div>
+              <div class="flex justify-center -mt-28 md:-mt-10">
+                <!-- first -->
+                <div class="relative md:h-72 md:w-72 h-64 w-64 mt-5 md:mt-0">
+                  <div
+                    class="bg-green-500 md:h-8 md:w-8 h-5 w-5 rounded-full absolute left-1/2 translate-x-8 top-[2%] flex justify-center items-center"
+                  >
+                    <h1
+                      class="text-[10px] md:text-base font-semibold text-white"
+                    >
+                      #1
+                    </h1>
+                  </div>
+                  <div
+                    class="bg-green-500 h-4 md:h-6 rounded-xl absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-3 md:top-[25%] md:translate-y-[7.6rem] flex justify-center items-center"
+                  >
+                    <h1
+                      class="text-[8px] md:text-sm font-semibold text-white px-2"
+                    >
+                      SJM454
+                    </h1>
+                  </div>
+                  <img
+                    src="https://media.licdn.com/dms/image/C4D03AQH5Ca0xlOg1DQ/profile-displayphoto-shrink_800_800/0/1575462484669?e=2147483647&v=beta&t=jHUStIpRsbw_jI4gvb1mkFefcbX-mcWOrOPKYy2-CG4"
+                    class="rounded-full md:h-52 h-32 mx-auto border-2 border-white"
+                    alt=""
+                  />
+                  <h1 class="md:text-base text-xs mt-2 md:mt-4">
+                    Muhammed Midlaj AV
+                  </h1>
+                  <h1 class="text-[10px] md:text-xs">
+                    Team <span class="font-bold">Chronicle</span>
+                  </h1>
+                  <h1 class="text-[10px] md:text-xs font-semibold">Grade A</h1>
+                </div>
+                <!-- first -->
+                <div class="relative md:h-72 md:w-72 h-64 w-64 mt-5 md:mt-0">
+                  <div
+                    class="bg-green-500 md:h-8 md:w-8 h-5 w-5 rounded-full absolute left-1/2 translate-x-8 top-[2%] flex justify-center items-center"
+                  >
+                    <h1
+                      class="text-[10px] md:text-base font-semibold text-white"
+                    >
+                      #1
+                    </h1>
+                  </div>
+                  <div
+                    class="bg-green-500 h-4 md:h-6 rounded-xl absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-3 md:top-[25%] md:translate-y-[7.6rem] flex justify-center items-center"
+                  >
+                    <h1
+                      class="text-[8px] md:text-sm font-semibold text-white px-2"
+                    >
+                      SJM454
+                    </h1>
+                  </div>
+                  <img
+                    src="https://media.licdn.com/dms/image/C4D03AQH5Ca0xlOg1DQ/profile-displayphoto-shrink_800_800/0/1575462484669?e=2147483647&v=beta&t=jHUStIpRsbw_jI4gvb1mkFefcbX-mcWOrOPKYy2-CG4"
+                    class="rounded-full md:h-52 h-32 mx-auto border-2 border-white"
+                    alt=""
+                  />
+                  <h1 class="md:text-base text-xs mt-2 md:mt-4">
+                    Muhammed Midlaj AV
+                  </h1>
+                  <h1 class="text-[10px] md:text-xs">
+                    Team <span class="font-bold">Chronicle</span>
+                  </h1>
+                  <h1 class="text-[10px] md:text-xs font-semibold">Grade A</h1>
+                </div>
+              </div>
+              <!-- grades -->
+              <div class="md:h-72  h-64 mx-auto -mt-24 md:mt-0  md:p-10 p-5">
+                <div class="flex items-center h-20 justify-center">
+                  <div class="bg-gray-200 h-8 w-8 md:h-12 md:w-12 rounded-xl flex items-center justify-center">
+                    <h1 class="text-green-500 font-bold">A</h1>
+                  </div>
+                  <div class="flex flex-col gap-3 items-end mt-6 md:mt-2 h-14">
+                    <div class="flex justify-between items-center text-xs md:text-lg gap-3 px-2">
+                      <p>SS123</p>
+                      <p>Muhammed Midlaj Av</p>
+                      <p>Team Chronicle</p>
+                    </div>
+                    <div class="flex justify-between items-center text-xs md:text-lg gap-3 px-2">
+                      <p>SS123</p>
+                      <p>Muhammed Midlaj Av</p>
+                      <p>Team Chronicle</p>
+                    </div>
+                    <div class="flex justify-between items-center text-xs md:text-lg gap-3 px-2">
+                      <p>SS123</p>
+                      <p>Muhammed Midlaj Av</p>
+                      <p>Team Chronicle</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex items-center h-20 mt-6 md:mt-16 justify-center">
+                  <div class="bg-gray-200 h-8 w-8 md:h-12 md:w-12 rounded-xl flex items-center justify-center">
+                    <h1 class="text-green-500 font-bold">B</h1>
+                  </div>
+                  <div class="flex flex-col gap-3 items-end mt-6 md:mt-2 h-14">
+                    <div class="flex justify-between items-center text-xs md:text-lg gap-3 px-2">
+                      <p>SS123</p>
+                      <p>Muhammed Midlaj Av</p>
+                      <p>Team Chronicle</p>
+                    </div>
+                    <div class="flex justify-between items-center text-xs md:text-lg gap-3 px-2">
+                      <p>SS123</p>
+                      <p>Muhammed Midlaj Av</p>
+                      <p>Team Chronicle</p>
+                    </div>
+                    <div class="flex justify-between items-center text-xs md:text-lg gap-3 px-2">
+                      <p>SS123</p>
+                      <p>Muhammed Midlaj Av</p>
+                      <p>Team Chronicle</p>
+                    </div>
+                  </div>
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Desktop View -->
+      <div class="w-screen h-screen lg:flex overflow-hidden hidden">
+        <!-- sidebar -->
+        <div
+          class="h-full w-80 min-w-[20rem] bg-color1 flex flex-col justify-center gap-3 pl-8"
+        >
+          <!-- title -->
+          <h1 class="text-white text-3xl font-semibold leading-none">
+            Results <br />
+            Page
+          </h1>
+          <!-- heading -->
+          <div class="flex justify-start gap-5">
+            <h2 class="text-white font-semibold">Live Results</h2>
+            <button class="h-6 bg-white border rounded-xl flex items-center">
+              <p class="px-2 font-medium">All</p>
+            </button>
+            <button class="h-6 border rounded-xl flex items-center">
+              <p class="px-2 text-sm text-white">Filter by</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-white"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path d="M480-360 280-560h400L480-360Z" />
+              </svg>
+            </button>
+          </div>
+          <!-- result -->
+          <div class="w-full h-[40rem]">
+            <!-- #01 -->
+            <div class="flex justfy-between h-1/4 w-full">
+              <div
+                class="h-full w-3/5 px-2 font-bold leading-tight pt-3 text-white"
+              >
+                <h1 class="text-2xl">#01</h1>
+                <h1 class="text-5xl">6217</h1>
+                <div
+                  class="h-8 bg-green-500 rounded-xl flex items-center justify-center"
+                >
+                  <h1 class="font-medium text-white">Team Tribune</h1>
+                </div>
+              </div>
+              <div
+                class="h-full w-2/5 flex flex-col items-start justify-center px-3"
+              >
+                <div class="flex items-center gap-2">
+                  <span
+                    class="h-[5px] w-[5px] bg-green-400 rounded-full"
+                  ></span>
+                  <p class="text-xs text-white">Arts : 320</p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="h-[5px] w-[5px] bg-blue-400 rounded-full"></span>
+                  <p class="text-xs text-white">Sports : 320</p>
+                </div>
+              </div>
+            </div>
+            <!-- #02 -->
+            <div class="flex justfy-between h-1/4 w-full">
+              <div
+                class="h-full w-3/5 px-2 font-bold leading-tight pt-3 text-white"
+              >
+                <h1 class="text-2xl">#01</h1>
+                <h1 class="text-5xl">6217</h1>
+                <div
+                  class="h-8 bg-red-500 rounded-xl flex items-center justify-center"
+                >
+                  <h1 class="font-medium text-white">Team Chronicle</h1>
+                </div>
+              </div>
+              <div
+                class="h-full w-2/5 flex flex-col items-start justify-center px-3"
+              >
+                <div class="flex items-center gap-2">
+                  <span
+                    class="h-[5px] w-[5px] bg-green-400 rounded-full"
+                  ></span>
+                  <p class="text-xs text-white">Arts : 320</p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="h-[5px] w-[5px] bg-blue-400 rounded-full"></span>
+                  <p class="text-xs text-white">Sports : 320</p>
+                </div>
+              </div>
+            </div>
+            <!-- #03 -->
+            <div class="flex justfy-between h-1/4 w-full">
+              <div
+                class="h-full w-3/5 px-2 font-bold leading-tight pt-3 text-white"
+              >
+                <h1 class="text-2xl">#01</h1>
+                <h1 class="text-5xl">6217</h1>
+                <div
+                  class="h-8 bg-blue-500 rounded-xl flex items-center justify-center"
+                >
+                  <h1 class="font-medium text-white">Team Gazette</h1>
+                </div>
+              </div>
+              <div
+                class="h-full w-2/5 flex flex-col items-start justify-center px-3"
+              >
+                <div class="flex items-center gap-2">
+                  <span
+                    class="h-[5px] w-[5px] bg-green-400 rounded-full"
+                  ></span>
+                  <p class="text-xs text-white">Arts : 320</p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="h-[5px] w-[5px] bg-blue-400 rounded-full"></span>
+                  <p class="text-xs text-white">Sports : 320</p>
+                </div>
+              </div>
+            </div>
+            <!-- #04 -->
+            <div class="flex justfy-between h-1/4 w-full">
+              <div
+                class="h-full w-3/5 px-2 font-bold leading-tight pt-3 text-white"
+              >
+                <h1 class="text-2xl">#01</h1>
+                <h1 class="text-5xl">6217</h1>
+                <div
+                  class="h-8 bg-yellow-500 rounded-xl flex items-center justify-center"
+                >
+                  <h1 class="font-medium text-white">Team Herald</h1>
+                </div>
+              </div>
+              <div
+                class="h-full w-2/5 flex flex-col items-start justify-center px-3"
+              >
+                <div class="flex items-center gap-2">
+                  <span
+                    class="h-[5px] w-[5px] bg-green-400 rounded-full"
+                  ></span>
+                  <p class="text-xs text-white">Arts : 320</p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="h-[5px] w-[5px] bg-blue-400 rounded-full"></span>
+                  <p class="text-xs text-white">Sports : 320</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- main content -->
+        <div
+          class="h-full xl:w-[85%] w-[75%] xl:bg-cover bg-cover bg-center flex items-center justify-center"
+          style="background-image: url('bg.jpg')"
+        >
+          <div class="w-[90%] h-[90%] overflow-hidden">
+            <!-- top -->
+            <div
+              class="h-[16%] flex justify-center items-center text-6xl font-bold text-color1"
+            >
+              <h1>#Live Results</h1>
+            </div>
+            <!-- photos -->
+            <div
+              class="bg-white h-[84%] w-full rounded-[2rem] text-center pt-2 lg:pt-5 overflow-hidden"
+            >
+              <h1 class="text-4xl lg:text-3xl 2xl:text-5xl font-semibold">
+                Ballon D'or Malayalam
+              </h1>
+              <h1 class="text-3xl lg:text-2xl 2xl:text-2xl font-semibold">
+                Thanawiyya Urdu
+              </h1>
+              <div
+                class="h-[60%] whitespace-nowrap overflow-x-auto overflow-y-hidden"
+              >
+                <div class="w-72 h-full inline-block text-center relative">
+                  <div
+                    class="bg-green-500 h-10 w-10 rounded-full absolute left-1/2 translate-x-12 top-6 flex items-center justify-center"
+                  >
+                    <h1 class="font-semibold text-white">#1</h1>
+                  </div>
+                  <div
+                    class="bg-green-500 h-6 rounded-full absolute left-1/2 -translate-x-1/2 top-[65%] 2xl:top-[65%] flex items-center justify-center"
+                  >
+                    <h1 class="font-semibold text-white text-sm px-2">
+                      SJM123
+                    </h1>
+                  </div>
+                  <img
+                    src="https://media.licdn.com/dms/image/C4D03AQH5Ca0xlOg1DQ/profile-displayphoto-shrink_800_800/0/1575462484669?e=2147483647&v=beta&t=jHUStIpRsbw_jI4gvb1mkFefcbX-mcWOrOPKYy2-CG4"
+                    class="rounded-full h-48 2xl:h-64 mx-auto mt-6"
+                    alt=""
+                  />
+                  <p class="absolute left-1/2 -translate-x-1/2 top-[73%] 2xl:top-[70%]">
+                    Muahmmed Midlaj AV
+                  </p>
+                  <p
+                    class="absolute left-1/2 -translate-x-1/2 text-sm top-[80%] 2xl:top-[75%]"
+                  >
+                    Team Chronicle
+                  </p>
+                  <p
+                    class="absolute left-1/2 -translate-x-1/2 text-sm top-[85%] 2xl:top-[80%]"
+                  >
+                    Grade <span class="font-semibold">A</span>
+                  </p>
+                </div>
+                <div class="w-72 h-full inline-block relative">
+                  <div
+                    class="bg-green-500 h-10 w-10 rounded-full absolute left-1/2 translate-x-12 top-6 flex items-center justify-center"
+                  >
+                    <h1 class="font-semibold text-white">#1</h1>
+                  </div>
+                  <div
+                    class="bg-green-500 h-6 rounded-full absolute left-1/2 -translate-x-1/2 top-[65%] 2xl:top-[65%] flex items-center justify-center"
+                  >
+                    <h1 class="font-semibold text-white text-sm px-2">
+                      SJM123
+                    </h1>
+                  </div>
+                  <img
+                    src="https://media.licdn.com/dms/image/C4D03AQH5Ca0xlOg1DQ/profile-displayphoto-shrink_800_800/0/1575462484669?e=2147483647&v=beta&t=jHUStIpRsbw_jI4gvb1mkFefcbX-mcWOrOPKYy2-CG4"
+                    class="rounded-full h-48 2xl:h-64 mx-auto mt-6"
+                    alt=""
+                  />
+                  <p class="absolute left-1/2 -translate-x-1/2 top-[73%] 2xl:top-[70%]">
+                    Muahmmed Midlaj AV
+                  </p>
+                  <p
+                    class="absolute left-1/2 -translate-x-1/2 text-sm top-[80%] 2xl:top-[75%]"
+                  >
+                    Team Chronicle
+                  </p>
+                  <p
+                    class="absolute left-1/2 -translate-x-1/2 text-sm top-[85%] 2xl:top-[80%]"
+                  >
+                    Grade <span class="font-semibold">A</span>
+                  </p>
+                </div>
+                <div class="w-72 h-full inline-block relative">
+                  <div
+                    class="bg-green-500 h-10 w-10 rounded-full absolute left-1/2 translate-x-12 top-6 flex items-center justify-center"
+                  >
+                    <h1 class="font-semibold text-white">#1</h1>
+                  </div>
+                  <div
+                    class="bg-green-500 h-6 rounded-full absolute left-1/2 -translate-x-1/2 top-[65%] 2xl:top-[65%] flex items-center justify-center"
+                  >
+                    <h1 class="font-semibold text-white text-sm px-2">
+                      SJM123
+                    </h1>
+                  </div>
+                  <img
+                    src="https://media.licdn.com/dms/image/C4D03AQH5Ca0xlOg1DQ/profile-displayphoto-shrink_800_800/0/1575462484669?e=2147483647&v=beta&t=jHUStIpRsbw_jI4gvb1mkFefcbX-mcWOrOPKYy2-CG4"
+                    class="rounded-full h-48 2xl:h-64 mx-auto mt-6"
+                    alt=""
+                  />
+                  <p class="absolute left-1/2 -translate-x-1/2 top-[73%] 2xl:top-[70%]">
+                    Muahmmed Midlaj AV
+                  </p>
+                  <p
+                    class="absolute left-1/2 -translate-x-1/2 text-sm top-[80%] 2xl:top-[75%]"
+                  >
+                    Team Chronicle
+                  </p>
+                  <p
+                    class="absolute left-1/2 -translate-x-1/2 text-sm top-[85%] 2xl:top-[80%]"
+                  >
+                    Grade <span class="font-semibold">A</span>
+                  </p>
+                </div>
+              </div>
+              <!-- grades -->
+              <div class=" 2xl:h-[24.5%] h-[28.2%] flex justify-center items-center ">
+                <div class="w-full h-full  flex p-2 px-5 gap-5 overflow-y-auto ">
+                  
+                  <div class="flex flex-wrap content-start gap-4 w-full">
+                    <!-- student 1 -->
+                    <div class="flex justify-between items-center w-[45%] h-10 text-sm">
+                      <div class="bg-gray-200 h-10 w-10 rounded-xl text-xl font-bold text-green-500 flex items-center justify-center">
+                        <p>A</p>
+                      </div>
+                      <p>SS123</p>
+                      <p>Muhammed Midlaj Av</p>
+                      <p>Chronicle</p>
+                   </div>
+
+                    <div class="flex justify-between items-center w-[45%] h-10 text-sm">
+                      <div class="bg-gray-200 h-10 w-10 rounded-xl text-xl font-bold text-green-500 flex items-center justify-center">
+                        <p>A</p>
+                      </div>
+                      <p>SS123</p>
+                      <p>Muhammed Midlaj Av</p>
+                      <p>Chronicle</p>
+                   </div>
+
+                    <div class="flex justify-between items-center w-[45%] h-10 text-sm">
+                      <div class="bg-gray-200 h-10 w-10 rounded-xl text-xl font-bold text-green-500 flex items-center justify-center">
+                        <p>A</p>
+                      </div>
+                      <p>SS123</p>
+                      <p>Muhammed Midlaj Av</p>
+                      <p>Chronicle</p>
+                    </div>
+
+                    
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
