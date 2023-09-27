@@ -118,6 +118,13 @@
               "1/2": "50%",
               96: "24rem",
             },
+            backgroundSize: {
+              auto: "auto",
+              cover: "cover",
+              contain: "contain",
+              "50%": "50%",
+              16: "4rem",
+            },
           },
         },
       };
@@ -126,79 +133,112 @@
   <body>
     <main>
       <!-- desktop view -->
-      <div class="h-screen w-screen bg-background hidden md:flex">
+      <div class="h-screen w-screen bg-background hidden lg:flex">
         <!-- sidebar -->
         <div class="h-full w-[15%] bg-color1"></div>
         <!-- content -->
         <div class="h-full w-[85%]">
           <!-- navbar -->
           <nav class="h-[13%] w-full bg-blue-400"></nav>
-          <div class="w-full bg-background h-[87%]">
+          <div class="w-full bg-background h-[87%] pl-5">
             <!-- top -->
             <div class="w-full h-[55%] flex">
               <!-- pie chart -->
-              <div class="h-full w-[50%]  p-2">
+              <div class="h-full w-[50%] p-2">
                 <div class="bg-white h-full w-full rounded-xl"></div>
               </div>
               <!-- cards -->
-              <div class="h-full w-[50%]  flex flex-col gap-5 p-2">
+              <div class="h-full w-[48.5%] flex flex-col gap-5 p-2">
                 <!-- first row -->
-                <div class="flex gap-5 w-full h-[50%]">
-                  <!-- card1 -->
-                  <div class="h-full w-1/3 bg-white rounded-xl flex flex-col items-center justify-center">
-                    <H1 class="text-4xl font-semibold text-color1">1230</H1>
-                    <p class="text-[10px]">Results Published</p>
-                  </div>
-                  <!-- card1 -->
-                  <div class="h-full w-1/3 bg-white rounded-xl flex flex-col items-center justify-center">
-                    <H1 class="text-4xl font-semibold text-color1">1230</H1>
-                    <p class="text-[10px]">Results Published</p>
-                  </div>
-                  <!-- card1 -->
-                  <div class="h-full w-1/3 bg-white rounded-xl flex flex-col items-center justify-center">
-                    <H1 class="text-4xl font-semibold text-color1">1230</H1>
-                    <p class="text-[10px]">Results Published</p>
+                <div class="h-[60%] w-full bg-white rounded-xl">
+                  <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+                    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                      <div class="text-center">
+                        <div class="flex items-center justify-center w-10 h-10 mx-auto mb-3 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
+                          <svg class="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10" stroke="currentColor" viewBox="0 0 52 52">
+                            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                          </svg>
+                        </div>
+                        <h6 class="text-4xl font-bold text-deep-purple-accent-400">819</h6>
+                        <p class="mb-2 font-bold text-sm">Downloads</p>
+                      </div>
+                      <div class="flex flex-col items-center justify-center">
+                        <div class="flex items-center justify-center w-10 h-10 mx-auto mb-3 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
+                          <svg class="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10" stroke="currentColor" viewBox="0 0 52 52">
+                            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                          </svg>
+                        </div>
+                        <h6 class="text-4xl font-bold text-deep-purple-accent-400">1.3K</h6>
+                        <p class="mb-2 font-bold text-sm">Users</p>
+                      </div>
+                      <div class="text-center">
+                        <div class="flex items-center justify-center w-10 h-10 mx-auto mb-3 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
+                          <svg class="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10" stroke="currentColor" viewBox="0 0 52 52">
+                            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                          </svg>
+                        </div>
+                        <h6 class="text-4xl font-bold text-deep-purple-accent-400">91</h6>
+                        <p class="mb-2 font-bold text-sm">Subscribers</p>
+                      </div>
+                      <div class="text-center">
+                        <div class="flex items-center justify-center w-10 h-10 mx-auto mb-3 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
+                          <svg class="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10" stroke="currentColor" viewBox="0 0 52 52">
+                            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                          </svg>
+                        </div>
+                        <h6 class="text-4xl font-bold text-deep-purple-accent-400">52</h6>
+                        <p class="mb-2 font-bold text-sm">Products</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <!-- first row -->
-                <div class="flex gap-5 w-full h-[50%]">
-                  <!-- card1 -->
-                  <div class="h-full w-1/3 bg-white rounded-xl flex flex-col items-center justify-center">
-                    <H1 class="text-4xl font-semibold text-color1">1230</H1>
-                    <p class="text-[10px]">Results Published</p>
-                  </div>
-                  <!-- card1 -->
-                  <div class="h-full w-1/3 bg-white rounded-xl flex flex-col items-center justify-center">
-                    <H1 class="text-4xl font-semibold text-color1">1230</H1>
-                    <p class="text-[10px]">Results Published</p>
-                  </div>
-                  <!-- card1 -->
-                  <div class="h-full w-1/3 bg-white rounded-xl flex flex-col items-center justify-center">
-                    <H1 class="text-4xl font-semibold text-color1">1230</H1>
-                    <p class="text-[10px]">Results Published</p>
-                  </div>
+                <!-- moto image -->
+                <div
+                  class="h-[40%] w-full rounded-xl bg-contain bg-center bg-no-repeat bg-white"
+                  style="
+                    background-image: url('https://github.com/ajnanmvr/realia/blob/master/public/arabic-logo.jpg?raw=true');
+                  "
+                >
+                  <!-- <img
+                    class="rounded-xl"
+                    src="https://github.com/ajnanmvr/realia/blob/master/public/arabic-logo.jpg?raw=true"
+                    alt=""
+                  /> -->
                 </div>
-
               </div>
             </div>
             <!-- bottom -->
-            <div class="w-full h-[45%]  flex p-2 gap-5">
+            <div class="w-full h-[45%] flex p-2 gap-5">
               <!-- arts toppers -->
               <div class="h-full w-1/3 bg-white rounded-xl">
                 <!-- toppers -->
                 <div class="h-full w-full overflow-hidden">
-                  <div class="h-1/6 w-full  flex items-center justify-between bigphone:px-2">
-                    <h1 class="text-2xl bigphone:text-xl font-bold mt-5">#Arts Toppers</h1>
-                    <div class="flex ">
+                  <div
+                    class="h-1/6 w-full flex items-center justify-between bigphone:px-2"
+                  >
+                    <h1 class="text-2xl bigphone:text-xl font-bold mt-5">
+                      #Arts Toppers
+                    </h1>
+                    <div class="flex">
                       <div class="flex items-center gap-1 justify-start">
                         <button
                           class="h-6 bigphone:h-6 bg-color1 border rounded-xl flex items-center"
                         >
-                          <h1 class="text-[10px] bigphone:text-xs px-2 text-white font-bold">All</h1>
+                          <h1
+                            class="text-[10px] bigphone:text-xs px-2 text-white font-bold"
+                          >
+                            All
+                          </h1>
                         </button>
-                        <button class="h-6 bigphone:h-6 border rounded-xl flex items-center w-24 justify-center">
+                        <button
+                          class="h-6 bigphone:h-6 border rounded-xl flex items-center w-24 justify-center"
+                        >
                           <div class="flex justify-center items-center">
-                            <h1 class="text-[10px] bigphone:text-xs text-color1 font-bold">Filter by</h1>
+                            <h1
+                              class="text-[10px] bigphone:text-xs text-color1 font-bold"
+                            >
+                              Filter by
+                            </h1>
                             <div class="">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -215,114 +255,213 @@
                       </div>
                     </div>
                   </div>
-                  <div class="w-[98%] h-4/5 bigphone:h-full mx-auto overflow-x-auto whitespace-nowrap overflow-y-hidden">
-  
-                    <div class="h-full w-48 top-5 inline-block relative ml-6 leading-tight">
-                      <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" alt="" class="rounded-full h-1/2 mx-auto border-4 border-color1">
-  
-                      <div class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center">
-                        <h1 class="text-center font-bold text-white text-sm">#1</h1>
+                  <div
+                    class="w-[98%] h-4/5 bigphone:h-full mx-auto overflow-x-auto whitespace-nowrap overflow-y-hidden"
+                  >
+                    <div
+                      class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                    >
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        alt=""
+                        class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                      />
+
+                      <div
+                        class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center"
+                      >
+                        <h1 class="text-center font-bold text-white text-sm">
+                          #1
+                        </h1>
                       </div>
-  
-                      <div class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]">
-                        <h1 class="text-center font-bold text-white text-xs px-1">SJM123</h1>
+
+                      <div
+                        class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                      >
+                        <h1
+                          class="text-center font-bold text-white text-xs px-1"
+                        >
+                          SJM123
+                        </h1>
                       </div>
-  
-                      <p class="text-center pt-1 text-sm font-semibold mt-2">Muhammed Midlaj Ms</p>
-                      <p class="text-center text-[10px] ">Senior Secondary</p>
-                      <p class="text-center text-[10px] ">Team Tribune</p>
-  
+
+                      <p class="text-center pt-1 text-sm font-semibold mt-2">
+                        Muhammed Midlaj Ms
+                      </p>
+                      <p class="text-center text-[10px]">Senior Secondary</p>
+                      <p class="text-center text-[10px]">Team Tribune</p>
                     </div>
-  
-                    <div class="h-full w-48 top-5 inline-block relative ml-6 leading-tight">
-                      <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" alt="" class="rounded-full h-1/2 mx-auto border-4 border-color1">
-  
-                      <div class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center">
-                        <h1 class="text-center font-bold text-white text-sm">#1</h1>
+
+                    <div
+                      class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                    >
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        alt=""
+                        class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                      />
+
+                      <div
+                        class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center"
+                      >
+                        <h1 class="text-center font-bold text-white text-sm">
+                          #1
+                        </h1>
                       </div>
-  
-                      <div class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]">
-                        <h1 class="text-center font-bold text-white text-xs px-1">SJM123</h1>
+
+                      <div
+                        class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                      >
+                        <h1
+                          class="text-center font-bold text-white text-xs px-1"
+                        >
+                          SJM123
+                        </h1>
                       </div>
-  
-                      <p class="text-center pt-1 text-sm font-semibold mt-2">Muhammed Midlaj Ms</p>
-                      <p class="text-center text-[10px] ">Senior Secondary</p>
-                      <p class="text-center text-[10px] ">Team Tribune</p>
-  
+
+                      <p class="text-center pt-1 text-sm font-semibold mt-2">
+                        Muhammed Midlaj Ms
+                      </p>
+                      <p class="text-center text-[10px]">Senior Secondary</p>
+                      <p class="text-center text-[10px]">Team Tribune</p>
                     </div>
-  
-                    <div class="h-full w-48 top-5 inline-block relative ml-6 leading-tight">
-                      <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" alt="" class="rounded-full h-1/2 mx-auto border-4 border-color1">
-  
-                      <div class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center">
-                        <h1 class="text-center font-bold text-white text-sm">#1</h1>
+
+                    <div
+                      class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                    >
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        alt=""
+                        class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                      />
+
+                      <div
+                        class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center"
+                      >
+                        <h1 class="text-center font-bold text-white text-sm">
+                          #1
+                        </h1>
                       </div>
-  
-                      <div class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]">
-                        <h1 class="text-center font-bold text-white text-xs px-1">SJM123</h1>
+
+                      <div
+                        class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                      >
+                        <h1
+                          class="text-center font-bold text-white text-xs px-1"
+                        >
+                          SJM123
+                        </h1>
                       </div>
-  
-                      <p class="text-center pt-1 text-sm font-semibold mt-2">Muhammed Midlaj Ms</p>
-                      <p class="text-center text-[10px] ">Senior Secondary</p>
-                      <p class="text-center text-[10px] ">Team Tribune</p>
-  
+
+                      <p class="text-center pt-1 text-sm font-semibold mt-2">
+                        Muhammed Midlaj Ms
+                      </p>
+                      <p class="text-center text-[10px]">Senior Secondary</p>
+                      <p class="text-center text-[10px]">Team Tribune</p>
                     </div>
-  
-                    <div class="h-full w-48 top-5 inline-block relative ml-6 leading-tight">
-                      <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" alt="" class="rounded-full h-1/2 mx-auto border-4 border-color1">
-  
-                      <div class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center">
-                        <h1 class="text-center font-bold text-white text-sm">#1</h1>
+
+                    <div
+                      class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                    >
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        alt=""
+                        class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                      />
+
+                      <div
+                        class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center"
+                      >
+                        <h1 class="text-center font-bold text-white text-sm">
+                          #1
+                        </h1>
                       </div>
-  
-                      <div class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]">
-                        <h1 class="text-center font-bold text-white text-xs px-1">SJM123</h1>
+
+                      <div
+                        class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                      >
+                        <h1
+                          class="text-center font-bold text-white text-xs px-1"
+                        >
+                          SJM123
+                        </h1>
                       </div>
-  
-                      <p class="text-center pt-1 text-sm font-semibold mt-2">Muhammed Midlaj Ms</p>
-                      <p class="text-center text-[10px] ">Senior Secondary</p>
-                      <p class="text-center text-[10px] ">Team Tribune</p>
-  
+
+                      <p class="text-center pt-1 text-sm font-semibold mt-2">
+                        Muhammed Midlaj Ms
+                      </p>
+                      <p class="text-center text-[10px]">Senior Secondary</p>
+                      <p class="text-center text-[10px]">Team Tribune</p>
                     </div>
-  
-                    <div class="h-full w-48 top-5 inline-block relative ml-6 leading-tight">
-                      <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" alt="" class="rounded-full h-1/2 mx-auto border-4 border-color1">
-  
-                      <div class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center">
-                        <h1 class="text-center font-bold text-white text-sm">#1</h1>
+
+                    <div
+                      class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                    >
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        alt=""
+                        class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                      />
+
+                      <div
+                        class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center"
+                      >
+                        <h1 class="text-center font-bold text-white text-sm">
+                          #1
+                        </h1>
                       </div>
-  
-                      <div class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]">
-                        <h1 class="text-center font-bold text-white text-xs px-1">SJM123</h1>
+
+                      <div
+                        class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                      >
+                        <h1
+                          class="text-center font-bold text-white text-xs px-1"
+                        >
+                          SJM123
+                        </h1>
                       </div>
-  
-                      <p class="text-center pt-1 text-sm font-semibold mt-2">Muhammed Midlaj Ms</p>
-                      <p class="text-center text-[10px] ">Senior Secondary</p>
-                      <p class="text-center text-[10px] ">Team Tribune</p>
-  
+
+                      <p class="text-center pt-1 text-sm font-semibold mt-2">
+                        Muhammed Midlaj Ms
+                      </p>
+                      <p class="text-center text-[10px]">Senior Secondary</p>
+                      <p class="text-center text-[10px]">Team Tribune</p>
                     </div>
-  
                   </div>
                 </div>
 
-              <!-- end -->
+                <!-- end -->
               </div>
               <!-- sports toppers -->
               <div class="h-full w-1/3 bg-white rounded-xl">
                 <!-- toppers -->
                 <div class="h-full w-full overflow-hidden">
-                  <div class="h-1/6 w-full  flex items-center justify-between bigphone:px-2">
-                    <h1 class="text-2xl bigphone:text-xl font-bold mt-5">#Sports Toppers</h1>
-                    <div class="flex ">
+                  <div
+                    class="h-1/6 w-full flex items-center justify-between bigphone:px-2"
+                  >
+                    <h1 class="text-2xl bigphone:text-xl font-bold mt-5">
+                      #Sports Toppers
+                    </h1>
+                    <div class="flex">
                       <div class="flex items-center gap-1 justify-start">
                         <button
                           class="h-6 bigphone:h-6 bg-color1 border rounded-xl flex items-center"
                         >
-                          <h1 class="text-[10px] bigphone:text-xs px-2 text-white font-bold">All</h1>
+                          <h1
+                            class="text-[10px] bigphone:text-xs px-2 text-white font-bold"
+                          >
+                            All
+                          </h1>
                         </button>
-                        <button class="h-6 bigphone:h-6 border rounded-xl flex items-center w-24 justify-center">
+                        <button
+                          class="h-6 bigphone:h-6 border rounded-xl flex items-center w-24 justify-center"
+                        >
                           <div class="flex justify-center items-center">
-                            <h1 class="text-[10px] bigphone:text-xs text-color1 font-bold">Filter by</h1>
+                            <h1
+                              class="text-[10px] bigphone:text-xs text-color1 font-bold"
+                            >
+                              Filter by
+                            </h1>
                             <div class="">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -339,224 +478,1126 @@
                       </div>
                     </div>
                   </div>
-                  <div class="w-[98%] h-4/5 bigphone:h-full mx-auto overflow-x-auto whitespace-nowrap overflow-y-hidden">
-  
-                    <div class="h-full w-48 top-5 inline-block relative ml-6 leading-tight">
-                      <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" alt="" class="rounded-full h-1/2 mx-auto border-4 border-color1">
-  
-                      <div class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center">
-                        <h1 class="text-center font-bold text-white text-sm">#1</h1>
+                  <div
+                    class="w-[98%] h-4/5 bigphone:h-full mx-auto overflow-x-auto whitespace-nowrap overflow-y-hidden"
+                  >
+                    <div
+                      class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                    >
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        alt=""
+                        class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                      />
+
+                      <div
+                        class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center"
+                      >
+                        <h1 class="text-center font-bold text-white text-sm">
+                          #1
+                        </h1>
                       </div>
-  
-                      <div class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]">
-                        <h1 class="text-center font-bold text-white text-xs px-1">SJM123</h1>
+
+                      <div
+                        class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                      >
+                        <h1
+                          class="text-center font-bold text-white text-xs px-1"
+                        >
+                          SJM123
+                        </h1>
                       </div>
-  
-                      <p class="text-center pt-1 text-sm font-semibold mt-2">Muhammed Midlaj Ms</p>
-                      <p class="text-center text-[10px] ">Senior Secondary</p>
-                      <p class="text-center text-[10px] ">Team Tribune</p>
-  
+
+                      <p class="text-center pt-1 text-sm font-semibold mt-2">
+                        Muhammed Midlaj Ms
+                      </p>
+                      <p class="text-center text-[10px]">Senior Secondary</p>
+                      <p class="text-center text-[10px]">Team Tribune</p>
                     </div>
-  
-                    <div class="h-full w-48 top-5 inline-block relative ml-6 leading-tight">
-                      <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" alt="" class="rounded-full h-1/2 mx-auto border-4 border-color1">
-  
-                      <div class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center">
-                        <h1 class="text-center font-bold text-white text-sm">#1</h1>
+
+                    <div
+                      class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                    >
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        alt=""
+                        class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                      />
+
+                      <div
+                        class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center"
+                      >
+                        <h1 class="text-center font-bold text-white text-sm">
+                          #1
+                        </h1>
                       </div>
-  
-                      <div class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]">
-                        <h1 class="text-center font-bold text-white text-xs px-1">SJM123</h1>
+
+                      <div
+                        class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                      >
+                        <h1
+                          class="text-center font-bold text-white text-xs px-1"
+                        >
+                          SJM123
+                        </h1>
                       </div>
-  
-                      <p class="text-center pt-1 text-sm font-semibold mt-2">Muhammed Midlaj Ms</p>
-                      <p class="text-center text-[10px] ">Senior Secondary</p>
-                      <p class="text-center text-[10px] ">Team Tribune</p>
-  
+
+                      <p class="text-center pt-1 text-sm font-semibold mt-2">
+                        Muhammed Midlaj Ms
+                      </p>
+                      <p class="text-center text-[10px]">Senior Secondary</p>
+                      <p class="text-center text-[10px]">Team Tribune</p>
                     </div>
-  
-                    <div class="h-full w-48 top-5 inline-block relative ml-6 leading-tight">
-                      <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" alt="" class="rounded-full h-1/2 mx-auto border-4 border-color1">
-  
-                      <div class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center">
-                        <h1 class="text-center font-bold text-white text-sm">#1</h1>
+
+                    <div
+                      class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                    >
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        alt=""
+                        class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                      />
+
+                      <div
+                        class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center"
+                      >
+                        <h1 class="text-center font-bold text-white text-sm">
+                          #1
+                        </h1>
                       </div>
-  
-                      <div class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]">
-                        <h1 class="text-center font-bold text-white text-xs px-1">SJM123</h1>
+
+                      <div
+                        class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                      >
+                        <h1
+                          class="text-center font-bold text-white text-xs px-1"
+                        >
+                          SJM123
+                        </h1>
                       </div>
-  
-                      <p class="text-center pt-1 text-sm font-semibold mt-2">Muhammed Midlaj Ms</p>
-                      <p class="text-center text-[10px] ">Senior Secondary</p>
-                      <p class="text-center text-[10px] ">Team Tribune</p>
-  
+
+                      <p class="text-center pt-1 text-sm font-semibold mt-2">
+                        Muhammed Midlaj Ms
+                      </p>
+                      <p class="text-center text-[10px]">Senior Secondary</p>
+                      <p class="text-center text-[10px]">Team Tribune</p>
                     </div>
-  
-                    <div class="h-full w-48 top-5 inline-block relative ml-6 leading-tight">
-                      <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" alt="" class="rounded-full h-1/2 mx-auto border-4 border-color1">
-  
-                      <div class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center">
-                        <h1 class="text-center font-bold text-white text-sm">#1</h1>
+
+                    <div
+                      class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                    >
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        alt=""
+                        class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                      />
+
+                      <div
+                        class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center"
+                      >
+                        <h1 class="text-center font-bold text-white text-sm">
+                          #1
+                        </h1>
                       </div>
-  
-                      <div class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]">
-                        <h1 class="text-center font-bold text-white text-xs px-1">SJM123</h1>
+
+                      <div
+                        class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                      >
+                        <h1
+                          class="text-center font-bold text-white text-xs px-1"
+                        >
+                          SJM123
+                        </h1>
                       </div>
-  
-                      <p class="text-center pt-1 text-sm font-semibold mt-2">Muhammed Midlaj Ms</p>
-                      <p class="text-center text-[10px] ">Senior Secondary</p>
-                      <p class="text-center text-[10px] ">Team Tribune</p>
-  
+
+                      <p class="text-center pt-1 text-sm font-semibold mt-2">
+                        Muhammed Midlaj Ms
+                      </p>
+                      <p class="text-center text-[10px]">Senior Secondary</p>
+                      <p class="text-center text-[10px]">Team Tribune</p>
                     </div>
-  
-                    <div class="h-full w-48 top-5 inline-block relative ml-6 leading-tight">
-                      <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" alt="" class="rounded-full h-1/2 mx-auto border-4 border-color1">
-  
-                      <div class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center">
-                        <h1 class="text-center font-bold text-white text-sm">#1</h1>
+
+                    <div
+                      class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                    >
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        alt=""
+                        class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                      />
+
+                      <div
+                        class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center"
+                      >
+                        <h1 class="text-center font-bold text-white text-sm">
+                          #1
+                        </h1>
                       </div>
-  
-                      <div class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]">
-                        <h1 class="text-center font-bold text-white text-xs px-1">SJM123</h1>
+
+                      <div
+                        class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                      >
+                        <h1
+                          class="text-center font-bold text-white text-xs px-1"
+                        >
+                          SJM123
+                        </h1>
                       </div>
-  
-                      <p class="text-center pt-1 text-sm font-semibold mt-2">Muhammed Midlaj Ms</p>
-                      <p class="text-center text-[10px] ">Senior Secondary</p>
-                      <p class="text-center text-[10px] ">Team Tribune</p>
-  
+
+                      <p class="text-center pt-1 text-sm font-semibold mt-2">
+                        Muhammed Midlaj Ms
+                      </p>
+                      <p class="text-center text-[10px]">Senior Secondary</p>
+                      <p class="text-center text-[10px]">Team Tribune</p>
                     </div>
-  
                   </div>
                 </div>
 
-              <!-- end -->
+                <!-- end -->
               </div>
               <!-- skill based -->
               <div class="h-full w-[29.5%] bg-white rounded-xl">
                 <!-- toppers -->
-              <div class="h-full w-full overflow-hidden">
-                <div class="h-1/6 w-full  flex items-center justify-between bigphone:px-2">
-                  <h1 class="text-2xl bigphone:text-xl font-bold mt-5">#Skill Toppers</h1>
-                  <div class="flex ">
-                    <div class="flex items-center gap-1 justify-start">
-                      <button
-                        class="h-6 bigphone:h-6 bg-color1 border rounded-xl flex items-center"
-                      >
-                        <h1 class="text-[10px] bigphone:text-xs px-2 text-white font-bold">All</h1>
-                      </button>
-                      <button class="h-6 bigphone:h-6 border rounded-xl flex items-center w-24 justify-center">
-                        <div class="flex justify-center items-center">
-                          <h1 class="text-[10px] bigphone:text-xs text-color1 font-bold">Filter by</h1>
-                          <div class="">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              class="fill-color1"
-                              height="24"
-                              viewBox="0 -960 960 960"
-                              width="24"
+                <div class="h-full w-full overflow-hidden">
+                  <div
+                    class="h-1/6 w-full flex items-center justify-between bigphone:px-2"
+                  >
+                    <h1 class="text-2xl bigphone:text-xl font-bold mt-5">
+                      #Skill Toppers
+                    </h1>
+                    <div class="flex">
+                      <div class="flex items-center gap-1 justify-start">
+                        <button
+                          class="h-6 bigphone:h-6 bg-color1 border rounded-xl flex items-center"
+                        >
+                          <h1
+                            class="text-[10px] bigphone:text-xs px-2 text-white font-bold"
+                          >
+                            All
+                          </h1>
+                        </button>
+                        <button
+                          class="h-6 bigphone:h-6 border rounded-xl flex items-center w-24 justify-center"
+                        >
+                          <div class="flex justify-center items-center">
+                            <h1
+                              class="text-[10px] bigphone:text-xs text-color1 font-bold"
                             >
-                              <path d="M480-360 280-560h400L480-360Z" />
-                            </svg>
+                              Filter by
+                            </h1>
+                            <div class="">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="fill-color1"
+                                height="24"
+                                viewBox="0 -960 960 960"
+                                width="24"
+                              >
+                                <path d="M480-360 280-560h400L480-360Z" />
+                              </svg>
+                            </div>
                           </div>
-                        </div>
-                      </button>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="w-[98%] h-4/5 bigphone:h-full mx-auto overflow-x-auto whitespace-nowrap overflow-y-hidden"
+                  >
+                    <div
+                      class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                    >
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        alt=""
+                        class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                      />
+
+                      <div
+                        class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center"
+                      >
+                        <h1 class="text-center font-bold text-white text-sm">
+                          #1
+                        </h1>
+                      </div>
+
+                      <div
+                        class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                      >
+                        <h1
+                          class="text-center font-bold text-white text-xs px-1"
+                        >
+                          SJM123
+                        </h1>
+                      </div>
+
+                      <p class="text-center pt-1 text-sm font-semibold mt-2">
+                        Muhammed Midlaj Ms
+                      </p>
+                      <p class="text-center text-[10px]">Senior Secondary</p>
+                      <p class="text-center text-[10px]">Team Tribune</p>
+                    </div>
+
+                    <div
+                      class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                    >
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        alt=""
+                        class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                      />
+
+                      <div
+                        class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center"
+                      >
+                        <h1 class="text-center font-bold text-white text-sm">
+                          #1
+                        </h1>
+                      </div>
+
+                      <div
+                        class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                      >
+                        <h1
+                          class="text-center font-bold text-white text-xs px-1"
+                        >
+                          SJM123
+                        </h1>
+                      </div>
+
+                      <p class="text-center pt-1 text-sm font-semibold mt-2">
+                        Muhammed Midlaj Ms
+                      </p>
+                      <p class="text-center text-[10px]">Senior Secondary</p>
+                      <p class="text-center text-[10px]">Team Tribune</p>
+                    </div>
+
+                    <div
+                      class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                    >
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        alt=""
+                        class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                      />
+
+                      <div
+                        class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center"
+                      >
+                        <h1 class="text-center font-bold text-white text-sm">
+                          #1
+                        </h1>
+                      </div>
+
+                      <div
+                        class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                      >
+                        <h1
+                          class="text-center font-bold text-white text-xs px-1"
+                        >
+                          SJM123
+                        </h1>
+                      </div>
+
+                      <p class="text-center pt-1 text-sm font-semibold mt-2">
+                        Muhammed Midlaj Ms
+                      </p>
+                      <p class="text-center text-[10px]">Senior Secondary</p>
+                      <p class="text-center text-[10px]">Team Tribune</p>
+                    </div>
+
+                    <div
+                      class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                    >
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        alt=""
+                        class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                      />
+
+                      <div
+                        class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center"
+                      >
+                        <h1 class="text-center font-bold text-white text-sm">
+                          #1
+                        </h1>
+                      </div>
+
+                      <div
+                        class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                      >
+                        <h1
+                          class="text-center font-bold text-white text-xs px-1"
+                        >
+                          SJM123
+                        </h1>
+                      </div>
+
+                      <p class="text-center pt-1 text-sm font-semibold mt-2">
+                        Muhammed Midlaj Ms
+                      </p>
+                      <p class="text-center text-[10px]">Senior Secondary</p>
+                      <p class="text-center text-[10px]">Team Tribune</p>
+                    </div>
+
+                    <div
+                      class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                    >
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        alt=""
+                        class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                      />
+
+                      <div
+                        class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center"
+                      >
+                        <h1 class="text-center font-bold text-white text-sm">
+                          #1
+                        </h1>
+                      </div>
+
+                      <div
+                        class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                      >
+                        <h1
+                          class="text-center font-bold text-white text-xs px-1"
+                        >
+                          SJM123
+                        </h1>
+                      </div>
+
+                      <p class="text-center pt-1 text-sm font-semibold mt-2">
+                        Muhammed Midlaj Ms
+                      </p>
+                      <p class="text-center text-[10px]">Senior Secondary</p>
+                      <p class="text-center text-[10px]">Team Tribune</p>
                     </div>
                   </div>
                 </div>
-                <div class="w-[98%] h-4/5 bigphone:h-full mx-auto overflow-x-auto whitespace-nowrap overflow-y-hidden">
 
-                  <div class="h-full w-48 top-5 inline-block relative ml-6 leading-tight">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" alt="" class="rounded-full h-1/2 mx-auto border-4 border-color1">
-
-                    <div class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center">
-                      <h1 class="text-center font-bold text-white text-sm">#1</h1>
-                    </div>
-
-                    <div class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]">
-                      <h1 class="text-center font-bold text-white text-xs px-1">SJM123</h1>
-                    </div>
-
-                    <p class="text-center pt-1 text-sm font-semibold mt-2">Muhammed Midlaj Ms</p>
-                    <p class="text-center text-[10px] ">Senior Secondary</p>
-                    <p class="text-center text-[10px] ">Team Tribune</p>
-
-                  </div>
-
-                  <div class="h-full w-48 top-5 inline-block relative ml-6 leading-tight">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" alt="" class="rounded-full h-1/2 mx-auto border-4 border-color1">
-
-                    <div class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center">
-                      <h1 class="text-center font-bold text-white text-sm">#1</h1>
-                    </div>
-
-                    <div class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]">
-                      <h1 class="text-center font-bold text-white text-xs px-1">SJM123</h1>
-                    </div>
-
-                    <p class="text-center pt-1 text-sm font-semibold mt-2">Muhammed Midlaj Ms</p>
-                    <p class="text-center text-[10px] ">Senior Secondary</p>
-                    <p class="text-center text-[10px] ">Team Tribune</p>
-
-                  </div>
-
-                  <div class="h-full w-48 top-5 inline-block relative ml-6 leading-tight">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" alt="" class="rounded-full h-1/2 mx-auto border-4 border-color1">
-
-                    <div class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center">
-                      <h1 class="text-center font-bold text-white text-sm">#1</h1>
-                    </div>
-
-                    <div class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]">
-                      <h1 class="text-center font-bold text-white text-xs px-1">SJM123</h1>
-                    </div>
-
-                    <p class="text-center pt-1 text-sm font-semibold mt-2">Muhammed Midlaj Ms</p>
-                    <p class="text-center text-[10px] ">Senior Secondary</p>
-                    <p class="text-center text-[10px] ">Team Tribune</p>
-
-                  </div>
-
-                  <div class="h-full w-48 top-5 inline-block relative ml-6 leading-tight">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" alt="" class="rounded-full h-1/2 mx-auto border-4 border-color1">
-
-                    <div class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center">
-                      <h1 class="text-center font-bold text-white text-sm">#1</h1>
-                    </div>
-
-                    <div class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]">
-                      <h1 class="text-center font-bold text-white text-xs px-1">SJM123</h1>
-                    </div>
-
-                    <p class="text-center pt-1 text-sm font-semibold mt-2">Muhammed Midlaj Ms</p>
-                    <p class="text-center text-[10px] ">Senior Secondary</p>
-                    <p class="text-center text-[10px] ">Team Tribune</p>
-
-                  </div>
-
-                  <div class="h-full w-48 top-5 inline-block relative ml-6 leading-tight">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" alt="" class="rounded-full h-1/2 mx-auto border-4 border-color1">
-
-                    <div class="bg-green-500 h-7 w-7 rounded-full absolute top-[15%] bigphone:top-[2%] left-[65%] pt-[.1rem] flex items-center justify-center">
-                      <h1 class="text-center font-bold text-white text-sm">#1</h1>
-                    </div>
-
-                    <div class="bg-green-500 h-4 rounded-full absolute top-[54%] left-[50%] translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]">
-                      <h1 class="text-center font-bold text-white text-xs px-1">SJM123</h1>
-                    </div>
-
-                    <p class="text-center pt-1 text-sm font-semibold mt-2">Muhammed Midlaj Ms</p>
-                    <p class="text-center text-[10px] ">Senior Secondary</p>
-                    <p class="text-center text-[10px] ">Team Tribune</p>
-
-                  </div>
-
-                </div>
-              </div>
-
-              <!-- end -->
+                <!-- end -->
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <!-- mobile view -->
+      <div class="h-screen w-screen bg-background overflow-hidden lg:hidden">
+        <!-- navbar -->
+        <nav class="h-24 w-full bg-blue-200 fixed z-50"></nav>
+        <!-- content -->
+        <div class="w-full h-full pt-28 px-3 gap-5 overflow-y-auto">
+          <!-- piechart -->
+          <div class="bg-white w-full h-80 rounded-xl"></div>
+          <!-- logo -->
+          <div class="bg-white w-full h-24 rounded-xl mt-5 bg-contain bg-no-repeat bg-center" style="background-image: url('https://github.com/ajnanmvr/realia/blob/master/public/arabic-logo.jpg?raw=true');"></div>
+          <!-- stats cards -->
+          <div class="bg-white w-full rounded-xl mt-5">
+            <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+              <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="text-center">
+                  <div class="flex items-center justify-center w-20 h-20 mx-auto mb-3 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
+                    <svg class="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10" stroke="currentColor" viewBox="0 0 52 52">
+                      <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                    </svg>
+                  </div>
+                  <h6 class="text-6xl font-bold text-deep-purple-accent-400">819</h6>
+                  <p class="mb-2 text-lg">Downloads</p>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                  <div class="flex items-center justify-center w-20 h-20 mx-auto mb-3 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
+                    <svg class="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10" stroke="currentColor" viewBox="0 0 52 52">
+                      <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                    </svg>
+                  </div>
+                  <h6 class="text-6xl font-bold text-deep-purple-accent-400">1.3K</h6>
+                  <p class="mb-2 text-lg">Users</p>
+                </div>
+                <div class="text-center">
+                  <div class="flex items-center justify-center w-20 h-20 mx-auto mb-3 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
+                    <svg class="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10" stroke="currentColor" viewBox="0 0 52 52">
+                      <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                    </svg>
+                  </div>
+                  <h6 class="text-6xl font-bold text-deep-purple-accent-400">91</h6>
+                  <p class="mb-2 text-lg">Subscribers</p>
+                </div>
+                <div class="text-center">
+                  <div class="flex items-center justify-center w-20 h-20 mx-auto mb-3 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
+                    <svg class="w-8 h-8 text-deep-purple-accent-400 sm:w-10 sm:h-10" stroke="currentColor" viewBox="0 0 52 52">
+                      <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                    </svg>
+                  </div>
+                  <h6 class="text-6xl font-bold text-deep-purple-accent-400">52</h6>
+                  <p class="mb-2 text-lg">Products</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- arts Toppers -->
+          <div class="bg-white w-full h-60 rounded-xl mt-5">
+            <div class="h-full w-full overflow-hidden">
+              <div
+                class="h-1/6 w-full flex items-center justify-between bigphone:px-2 px-5"
+              >
+                <h1 class="text-2xl bigphone:text-xl font-bold mt-8 ">
+                  #Arts Toppers
+                </h1>
+                <div class="flex">
+                  <div class="flex items-center gap-1 justify-start">
+                    <button
+                      class="h-6 bigphone:h-6 bg-color1 border rounded-xl flex items-center"
+                    >
+                      <h1
+                        class="text-[10px] bigphone:text-xs px-2 text-white font-bold"
+                      >
+                        All
+                      </h1>
+                    </button>
+                    <button
+                      class="h-6 bigphone:h-6 border rounded-xl flex items-center w-24 justify-center"
+                    >
+                      <div class="flex justify-center items-center">
+                        <h1
+                          class="text-[10px] bigphone:text-xs text-color1 font-bold"
+                        >
+                          Filter by
+                        </h1>
+                        <div class="">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="fill-color1"
+                            height="24"
+                            viewBox="0 -960 960 960"
+                            width="24"
+                          >
+                            <path d="M480-360 280-560h400L480-360Z" />
+                          </svg>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-[98%] h-4/5 bigphone:h-full mx-auto overflow-x-auto whitespace-nowrap overflow-y-hidden"
+              >
+                <div
+                  class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                    alt=""
+                    class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                  />
+
+                  <div
+                    class="bg-green-500 h-5 w-5 bigphone:h-7 bigphone:w-7 rounded-full absolute top-[3%] bigphone:top-[2%] left-[63%] pt-[.1rem] flex items-center justify-center"
+                  >
+                    <h1 class="text-center font-semibold text-white text-xs">
+                      #1
+                    </h1>
+                  </div>
+
+                  <div
+                    class="bg-green-500 h-4 rounded-full absolute top-[46%] left-[50%] -translate-x-6 bigphone:translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                  >
+                    <h1
+                      class="text-center font-bold text-white text-xs px-1"
+                    >
+                      SJM123
+                    </h1>
+                  </div>
+
+                  <p class="text-center pt-1 text-sm font-semibold mt-2">
+                    Muhammed Midlaj Ms
+                  </p>
+                  <p class="text-center text-[10px]">Senior Secondary</p>
+                  <p class="text-center text-[10px]">Team Tribune</p>
+                </div>
+
+                <div
+                  class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                    alt=""
+                    class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                  />
+
+                  <div
+                    class="bg-green-500 h-5 w-5 bigphone:h-7 bigphone:w-7 rounded-full absolute top-[3%] bigphone:top-[2%] left-[63%] pt-[.1rem] flex items-center justify-center"
+                  >
+                    <h1 class="text-center font-semibold text-white text-xs">
+                      #1
+                    </h1>
+                  </div>
+
+                  <div
+                    class="bg-green-500 h-4 rounded-full absolute top-[46%] left-[50%] -translate-x-6 bigphone:translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                  >
+                    <h1
+                      class="text-center font-bold text-white text-xs px-1"
+                    >
+                      SJM123
+                    </h1>
+                  </div>
+
+                  <p class="text-center pt-1 text-sm font-semibold mt-2">
+                    Muhammed Midlaj Ms
+                  </p>
+                  <p class="text-center text-[10px]">Senior Secondary</p>
+                  <p class="text-center text-[10px]">Team Tribune</p>
+                </div>
+
+                <div
+                  class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                    alt=""
+                    class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                  />
+
+                  <div
+                    class="bg-green-500 h-5 w-5 bigphone:h-7 bigphone:w-7 rounded-full absolute top-[3%] bigphone:top-[2%] left-[63%] pt-[.1rem] flex items-center justify-center"
+                  >
+                    <h1 class="text-center font-semibold text-white text-xs">
+                      #1
+                    </h1>
+                  </div>
+
+                  <div
+                    class="bg-green-500 h-4 rounded-full absolute top-[46%] left-[50%] -translate-x-6 bigphone:translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                  >
+                    <h1
+                      class="text-center font-bold text-white text-xs px-1"
+                    >
+                      SJM123
+                    </h1>
+                  </div>
+
+                  <p class="text-center pt-1 text-sm font-semibold mt-2">
+                    Muhammed Midlaj Ms
+                  </p>
+                  <p class="text-center text-[10px]">Senior Secondary</p>
+                  <p class="text-center text-[10px]">Team Tribune</p>
+                </div>
+
+                <div
+                  class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                    alt=""
+                    class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                  />
+
+                  <div
+                    class="bg-green-500 h-5 w-5 bigphone:h-7 bigphone:w-7 rounded-full absolute top-[3%] bigphone:top-[2%] left-[63%] pt-[.1rem] flex items-center justify-center"
+                  >
+                    <h1 class="text-center font-semibold text-white text-xs">
+                      #1
+                    </h1>
+                  </div>
+
+                  <div
+                    class="bg-green-500 h-4 rounded-full absolute top-[46%] left-[50%] -translate-x-6 bigphone:translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                  >
+                    <h1
+                      class="text-center font-bold text-white text-xs px-1"
+                    >
+                      SJM123
+                    </h1>
+                  </div>
+
+                  <p class="text-center pt-1 text-sm font-semibold mt-2">
+                    Muhammed Midlaj Ms
+                  </p>
+                  <p class="text-center text-[10px]">Senior Secondary</p>
+                  <p class="text-center text-[10px]">Team Tribune</p>
+                </div>
+
+                <div
+                  class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                    alt=""
+                    class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                  />
+
+                  <div
+                    class="bg-green-500 h-5 w-5 bigphone:h-7 bigphone:w-7 rounded-full absolute top-[3%] bigphone:top-[2%] left-[63%] pt-[.1rem] flex items-center justify-center"
+                  >
+                    <h1 class="text-center font-semibold text-white text-xs">
+                      #1
+                    </h1>
+                  </div>
+
+                  <div
+                    class="bg-green-500 h-4 rounded-full absolute top-[46%] left-[50%] -translate-x-6 bigphone:translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                  >
+                    <h1
+                      class="text-center font-bold text-white text-xs px-1"
+                    >
+                      SJM123
+                    </h1>
+                  </div>
+
+                  <p class="text-center pt-1 text-sm font-semibold mt-2">
+                    Muhammed Midlaj Ms
+                  </p>
+                  <p class="text-center text-[10px]">Senior Secondary</p>
+                  <p class="text-center text-[10px]">Team Tribune</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- sports Toppers -->
+          <div class="bg-white w-full h-60 rounded-xl mt-5">
+            <div class="h-full w-full overflow-hidden">
+              <div
+                class="h-1/6 w-full flex items-center justify-between bigphone:px-2 px-5"
+              >
+                <h1 class="text-2xl bigphone:text-xl font-bold mt-8 leading-tight ">
+                  #Sports Toppers
+                </h1>
+                <div class="flex">
+                  <div class="flex items-center gap-1 justify-start">
+                    <button
+                      class="h-6 bigphone:h-6 bg-color1 border rounded-xl flex items-center"
+                    >
+                      <h1
+                        class="text-[10px] bigphone:text-xs px-2 text-white font-bold"
+                      >
+                        All
+                      </h1>
+                    </button>
+                    <button
+                      class="h-6 bigphone:h-6 border rounded-xl flex items-center w-24 justify-center"
+                    >
+                      <div class="flex justify-center items-center">
+                        <h1
+                          class="text-[10px] bigphone:text-xs text-color1 font-bold"
+                        >
+                          Filter by
+                        </h1>
+                        <div class="">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="fill-color1"
+                            height="24"
+                            viewBox="0 -960 960 960"
+                            width="24"
+                          >
+                            <path d="M480-360 280-560h400L480-360Z" />
+                          </svg>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-[98%] h-4/5 bigphone:h-full mx-auto overflow-x-auto whitespace-nowrap overflow-y-hidden"
+              >
+                <div
+                  class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                    alt=""
+                    class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                  />
+
+                  <div
+                    class="bg-green-500 h-5 w-5 bigphone:h-7 bigphone:w-7 rounded-full absolute top-[3%] bigphone:top-[2%] left-[63%] pt-[.1rem] flex items-center justify-center"
+                  >
+                    <h1 class="text-center font-semibold text-white text-xs">
+                      #1
+                    </h1>
+                  </div>
+
+                  <div
+                    class="bg-green-500 h-4 rounded-full absolute top-[46%] left-[50%] -translate-x-6 bigphone:translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                  >
+                    <h1
+                      class="text-center font-bold text-white text-xs px-1"
+                    >
+                      SJM123
+                    </h1>
+                  </div>
+
+                  <p class="text-center pt-1 text-sm font-semibold mt-2">
+                    Muhammed Midlaj Ms
+                  </p>
+                  <p class="text-center text-[10px]">Senior Secondary</p>
+                  <p class="text-center text-[10px]">Team Tribune</p>
+                </div>
+
+                <div
+                  class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                    alt=""
+                    class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                  />
+
+                  <div
+                    class="bg-green-500 h-5 w-5 bigphone:h-7 bigphone:w-7 rounded-full absolute top-[3%] bigphone:top-[2%] left-[63%] pt-[.1rem] flex items-center justify-center"
+                  >
+                    <h1 class="text-center font-semibold text-white text-xs">
+                      #1
+                    </h1>
+                  </div>
+
+                  <div
+                    class="bg-green-500 h-4 rounded-full absolute top-[46%] left-[50%] -translate-x-6 bigphone:translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                  >
+                    <h1
+                      class="text-center font-bold text-white text-xs px-1"
+                    >
+                      SJM123
+                    </h1>
+                  </div>
+
+                  <p class="text-center pt-1 text-sm font-semibold mt-2">
+                    Muhammed Midlaj Ms
+                  </p>
+                  <p class="text-center text-[10px]">Senior Secondary</p>
+                  <p class="text-center text-[10px]">Team Tribune</p>
+                </div>
+
+                <div
+                  class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                    alt=""
+                    class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                  />
+
+                  <div
+                    class="bg-green-500 h-5 w-5 bigphone:h-7 bigphone:w-7 rounded-full absolute top-[3%] bigphone:top-[2%] left-[63%] pt-[.1rem] flex items-center justify-center"
+                  >
+                    <h1 class="text-center font-semibold text-white text-xs">
+                      #1
+                    </h1>
+                  </div>
+
+                  <div
+                    class="bg-green-500 h-4 rounded-full absolute top-[46%] left-[50%] -translate-x-6 bigphone:translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                  >
+                    <h1
+                      class="text-center font-bold text-white text-xs px-1"
+                    >
+                      SJM123
+                    </h1>
+                  </div>
+
+                  <p class="text-center pt-1 text-sm font-semibold mt-2">
+                    Muhammed Midlaj Ms
+                  </p>
+                  <p class="text-center text-[10px]">Senior Secondary</p>
+                  <p class="text-center text-[10px]">Team Tribune</p>
+                </div>
+
+                <div
+                  class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                    alt=""
+                    class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                  />
+
+                  <div
+                    class="bg-green-500 h-5 w-5 bigphone:h-7 bigphone:w-7 rounded-full absolute top-[3%] bigphone:top-[2%] left-[63%] pt-[.1rem] flex items-center justify-center"
+                  >
+                    <h1 class="text-center font-semibold text-white text-xs">
+                      #1
+                    </h1>
+                  </div>
+
+                  <div
+                    class="bg-green-500 h-4 rounded-full absolute top-[46%] left-[50%] -translate-x-6 bigphone:translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                  >
+                    <h1
+                      class="text-center font-bold text-white text-xs px-1"
+                    >
+                      SJM123
+                    </h1>
+                  </div>
+
+                  <p class="text-center pt-1 text-sm font-semibold mt-2">
+                    Muhammed Midlaj Ms
+                  </p>
+                  <p class="text-center text-[10px]">Senior Secondary</p>
+                  <p class="text-center text-[10px]">Team Tribune</p>
+                </div>
+
+                <div
+                  class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                    alt=""
+                    class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                  />
+
+                  <div
+                    class="bg-green-500 h-5 w-5 bigphone:h-7 bigphone:w-7 rounded-full absolute top-[3%] bigphone:top-[2%] left-[63%] pt-[.1rem] flex items-center justify-center"
+                  >
+                    <h1 class="text-center font-semibold text-white text-xs">
+                      #1
+                    </h1>
+                  </div>
+
+                  <div
+                    class="bg-green-500 h-4 rounded-full absolute top-[46%] left-[50%] -translate-x-6 bigphone:translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                  >
+                    <h1
+                      class="text-center font-bold text-white text-xs px-1"
+                    >
+                      SJM123
+                    </h1>
+                  </div>
+
+                  <p class="text-center pt-1 text-sm font-semibold mt-2">
+                    Muhammed Midlaj Ms
+                  </p>
+                  <p class="text-center text-[10px]">Senior Secondary</p>
+                  <p class="text-center text-[10px]">Team Tribune</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- skill Toppers -->
+          <div class="bg-white w-full h-60 rounded-xl mt-5">
+            <div class="h-full w-full overflow-hidden">
+              <div
+                class="h-1/6 w-full flex items-center justify-between bigphone:px-2 px-5"
+              >
+                <h1 class="text-2xl bigphone:text-xl font-bold mt-8 ">
+                  #Skill Toppers
+                </h1>
+                <div class="flex">
+                  <div class="flex items-center gap-1 justify-start">
+                    <button
+                      class="h-6 bigphone:h-6 bg-color1 border rounded-xl flex items-center"
+                    >
+                      <h1
+                        class="text-[10px] bigphone:text-xs px-2 text-white font-bold"
+                      >
+                        All
+                      </h1>
+                    </button>
+                    <button
+                      class="h-6 bigphone:h-6 border rounded-xl flex items-center w-24 justify-center"
+                    >
+                      <div class="flex justify-center items-center">
+                        <h1
+                          class="text-[10px] bigphone:text-xs text-color1 font-bold"
+                        >
+                          Filter by
+                        </h1>
+                        <div class="">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="fill-color1"
+                            height="24"
+                            viewBox="0 -960 960 960"
+                            width="24"
+                          >
+                            <path d="M480-360 280-560h400L480-360Z" />
+                          </svg>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-[98%] h-4/5 bigphone:h-full mx-auto overflow-x-auto whitespace-nowrap overflow-y-hidden"
+              >
+                <div
+                  class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                    alt=""
+                    class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                  />
+
+                  <div
+                    class="bg-green-500 h-5 w-5 bigphone:h-7 bigphone:w-7 rounded-full absolute top-[3%] bigphone:top-[2%] left-[63%] pt-[.1rem] flex items-center justify-center"
+                  >
+                    <h1 class="text-center font-semibold text-white text-xs">
+                      #1
+                    </h1>
+                  </div>
+
+                  <div
+                    class="bg-green-500 h-4 rounded-full absolute top-[46%] left-[50%] -translate-x-6 bigphone:translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                  >
+                    <h1
+                      class="text-center font-bold text-white text-xs px-1"
+                    >
+                      SJM123
+                    </h1>
+                  </div>
+
+                  <p class="text-center pt-1 text-sm font-semibold mt-2">
+                    Muhammed Midlaj Ms
+                  </p>
+                  <p class="text-center text-[10px]">Senior Secondary</p>
+                  <p class="text-center text-[10px]">Team Tribune</p>
+                </div>
+
+                <div
+                  class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                    alt=""
+                    class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                  />
+
+                  <div
+                    class="bg-green-500 h-5 w-5 bigphone:h-7 bigphone:w-7 rounded-full absolute top-[3%] bigphone:top-[2%] left-[63%] pt-[.1rem] flex items-center justify-center"
+                  >
+                    <h1 class="text-center font-semibold text-white text-xs">
+                      #1
+                    </h1>
+                  </div>
+
+                  <div
+                    class="bg-green-500 h-4 rounded-full absolute top-[46%] left-[50%] -translate-x-6 bigphone:translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                  >
+                    <h1
+                      class="text-center font-bold text-white text-xs px-1"
+                    >
+                      SJM123
+                    </h1>
+                  </div>
+
+                  <p class="text-center pt-1 text-sm font-semibold mt-2">
+                    Muhammed Midlaj Ms
+                  </p>
+                  <p class="text-center text-[10px]">Senior Secondary</p>
+                  <p class="text-center text-[10px]">Team Tribune</p>
+                </div>
+
+                <div
+                  class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                    alt=""
+                    class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                  />
+
+                  <div
+                    class="bg-green-500 h-5 w-5 bigphone:h-7 bigphone:w-7 rounded-full absolute top-[3%] bigphone:top-[2%] left-[63%] pt-[.1rem] flex items-center justify-center"
+                  >
+                    <h1 class="text-center font-semibold text-white text-xs">
+                      #1
+                    </h1>
+                  </div>
+
+                  <div
+                    class="bg-green-500 h-4 rounded-full absolute top-[46%] left-[50%] -translate-x-6 bigphone:translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                  >
+                    <h1
+                      class="text-center font-bold text-white text-xs px-1"
+                    >
+                      SJM123
+                    </h1>
+                  </div>
+
+                  <p class="text-center pt-1 text-sm font-semibold mt-2">
+                    Muhammed Midlaj Ms
+                  </p>
+                  <p class="text-center text-[10px]">Senior Secondary</p>
+                  <p class="text-center text-[10px]">Team Tribune</p>
+                </div>
+
+                <div
+                  class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                    alt=""
+                    class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                  />
+
+                  <div
+                    class="bg-green-500 h-5 w-5 bigphone:h-7 bigphone:w-7 rounded-full absolute top-[3%] bigphone:top-[2%] left-[63%] pt-[.1rem] flex items-center justify-center"
+                  >
+                    <h1 class="text-center font-semibold text-white text-xs">
+                      #1
+                    </h1>
+                  </div>
+
+                  <div
+                    class="bg-green-500 h-4 rounded-full absolute top-[46%] left-[50%] -translate-x-6 bigphone:translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                  >
+                    <h1
+                      class="text-center font-bold text-white text-xs px-1"
+                    >
+                      SJM123
+                    </h1>
+                  </div>
+
+                  <p class="text-center pt-1 text-sm font-semibold mt-2">
+                    Muhammed Midlaj Ms
+                  </p>
+                  <p class="text-center text-[10px]">Senior Secondary</p>
+                  <p class="text-center text-[10px]">Team Tribune</p>
+                </div>
+
+                <div
+                  class="h-full w-48 top-5 inline-block relative ml-6 leading-tight"
+                >
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                    alt=""
+                    class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                  />
+
+                  <div
+                    class="bg-green-500 h-5 w-5 bigphone:h-7 bigphone:w-7 rounded-full absolute top-[3%] bigphone:top-[2%] left-[63%] pt-[.1rem] flex items-center justify-center"
+                  >
+                    <h1 class="text-center font-semibold text-white text-xs">
+                      #1
+                    </h1>
+                  </div>
+
+                  <div
+                    class="bg-green-500 h-4 rounded-full absolute top-[46%] left-[50%] -translate-x-6 bigphone:translate-x-2 bigphone:left-[32%] bigphone:top-[47%] pt-[.02rem]"
+                  >
+                    <h1
+                      class="text-center font-bold text-white text-xs px-1"
+                    >
+                      SJM123
+                    </h1>
+                  </div>
+
+                  <p class="text-center pt-1 text-sm font-semibold mt-2">
+                    Muhammed Midlaj Ms
+                  </p>
+                  <p class="text-center text-[10px]">Senior Secondary</p>
+                  <p class="text-center text-[10px]">Team Tribune</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </main>
