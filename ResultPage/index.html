@@ -142,7 +142,9 @@
           </h1>
         </div>
         <!-- judge Card -->
-        <div class="bg-white h-[86%] bigphone:h-[89.5%] w-full rounded-t-large overflow-hidden">
+        <div
+          class="bg-white h-[86%] bigphone:h-[89.5%] w-full rounded-t-large overflow-hidden"
+        >
           <!-- main -->
           <div
             class="grid gap-5 overflow-y-auto h-[99%] pt-[3.25rem] overflow-x-hidden"
@@ -186,7 +188,7 @@
               </button>
 
               <!-- Results -->
-              <!-- <div class="h-full">
+              <div class="h-full">
                 <div
                   class="w-full flex justify-start items-center flex-col pt-2"
                 >
@@ -197,22 +199,13 @@
                     >
                       <h1 class="text-xs bigphone:text-base px-2 text-white font-bold">All</h1>
                     </button>
-                    <button class="h-6 bigphone:h-8 border rounded-xl flex items-center">
-                      <div class="flex justify-center px-2 items-center">
-                        <h1 class="text-xs bigphone:text-base text-color1 font-bold">Filter by</h1>
-                        <div class="">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="fill-color1"
-                            height="24"
-                            viewBox="0 -960 960 960"
-                            width="24"
-                          >
-                            <path d="M480-360 280-560h400L480-360Z" />
-                          </svg>
-                        </div>
-                      </div>
-                    </button>
+                    <select class="h-6 bigphone:h-8 border rounded-xl flex items-center" name="" id="">
+                      <option value="1">Category</option>
+                      <option value="1">Bidaya</option>
+                      <option value="1">Ula</option>
+                      <option value="1">Thaniya</option>
+                      <option value="1">Thanawiyyah</option>
+                    </select>
                   </div>
                 </div>
                 <div class="w-full h-[80%] flex flex-col mt-5">
@@ -353,22 +346,36 @@
                     </div>
                   </div>
                 </div>
-              </div> -->
+              </div>
 
               <!-- toppers -->
-              <div class="h-full w-full overflow-hidden">
-                <div class="h-1/6 w-full  flex items-center justify-between px-2 bigphone:px-10">
-                  <h1 class="text-2xl bigphone:text-4xl font-bold">#Leading Now</h1>
+              <!-- <div class="h-full w-full overflow-hidden">
+                <div
+                  class="h-1/6 w-full flex items-center justify-between px-2 bigphone:px-10"
+                >
+                  <h1 class="text-2xl bigphone:text-4xl font-bold">
+                    #Leading Now
+                  </h1>
                   <div class="flex">
                     <div class="flex items-center gap-5">
                       <button
                         class="h-6 bigphone:h-8 bg-color1 border rounded-xl flex items-center"
                       >
-                        <h1 class="text-xs bigphone:text-base px-2 text-white font-bold">All</h1>
+                        <h1
+                          class="text-xs bigphone:text-base px-2 text-white font-bold"
+                        >
+                          All
+                        </h1>
                       </button>
-                      <button class="h-6 bigphone:h-8 border rounded-xl flex items-center">
+                      <button
+                        class="h-6 bigphone:h-8 border rounded-xl flex items-center"
+                      >
                         <div class="flex justify-center px-2 items-center">
-                          <h1 class="text-xs bigphone:text-base text-color1 font-bold">Filter by</h1>
+                          <h1
+                            class="text-xs bigphone:text-base text-color1 font-bold"
+                          >
+                            Category
+                          </h1>
                           <div class="">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -385,102 +392,167 @@
                     </div>
                   </div>
                 </div>
-                <div class="w-[98%] h-4/5 bigphone:h-full mx-auto overflow-x-auto whitespace-nowrap overflow-y-hidden">
-
+                <div
+                  class="w-[98%] h-4/5 bigphone:h-full mx-auto overflow-x-auto whitespace-nowrap overflow-y-hidden"
+                >
                   <div class="h-full w-48 pt-[15%] inline-block relative ml-6">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" alt="" class="rounded-full h-1/2 mx-auto border-4 border-color1">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                      alt=""
+                      class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                    />
 
-                    <div class="bg-green-500 h-8 w-8 rounded-full absolute top-[15%] bigphone:top-[22%] left-[65%] pt-[.1rem]">
-                      <h1 class="text-center font-bold text-white text-lg">#1</h1>
+                    <div
+                      class="bg-green-500 h-8 w-8 rounded-full absolute top-[15%] bigphone:top-[22%] left-[65%] pt-[.1rem]"
+                    >
+                      <h1 class="text-center font-bold text-white text-lg">
+                        #1
+                      </h1>
                     </div>
 
-                    <div class="bg-green-500 h-5 rounded-full absolute top-[54%] left-[39%] bigphone:left-[32%] bigphone:top-[58%] pt-[.02rem]">
-                      <h1 class="text-center font-bold text-white text-sm px-2">SJM123</h1>
+                    <div
+                      class="bg-green-500 h-5 rounded-full absolute top-[54%] left-[39%] bigphone:left-[32%] bigphone:top-[58%] pt-[.02rem]"
+                    >
+                      <h1 class="text-center font-bold text-white text-sm px-2">
+                        SJM123
+                      </h1>
                     </div>
 
-                    <p class="text-center pt-1 font-semibold">Muhammed Midlaj Ms</p>
-                    <p class="text-center text-sm ">Senior Secondary</p>
-                    <p class="text-center text-sm ">Team Tribune</p>
-
+                    <p class="text-center pt-1 font-semibold">
+                      Muhammed Midlaj Ms
+                    </p>
+                    <p class="text-center text-sm">Senior Secondary</p>
+                    <p class="text-center text-sm">Team Tribune</p>
                   </div>
 
                   <div class="h-full w-48 pt-[15%] inline-block relative ml-6">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" alt="" class="rounded-full h-1/2 mx-auto border-4 border-color1">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                      alt=""
+                      class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                    />
 
-                    <div class="bg-green-500 h-8 w-8 rounded-full absolute top-[15%] bigphone:top-[22%] left-[65%] pt-[.1rem]">
-                      <h1 class="text-center font-bold text-white text-lg">#1</h1>
+                    <div
+                      class="bg-green-500 h-8 w-8 rounded-full absolute top-[15%] bigphone:top-[22%] left-[65%] pt-[.1rem]"
+                    >
+                      <h1 class="text-center font-bold text-white text-lg">
+                        #1
+                      </h1>
                     </div>
 
-                    <div class="bg-green-500 h-5 rounded-full absolute top-[54%] left-[39%] bigphone:left-[32%] bigphone:top-[58%] pt-[.02rem]">
-                      <h1 class="text-center font-bold text-white text-sm px-2">SJM123</h1>
+                    <div
+                      class="bg-green-500 h-5 rounded-full absolute top-[54%] left-[39%] bigphone:left-[32%] bigphone:top-[58%] pt-[.02rem]"
+                    >
+                      <h1 class="text-center font-bold text-white text-sm px-2">
+                        SJM123
+                      </h1>
                     </div>
 
-                    <p class="text-center pt-1 font-semibold">Muhammed Midlaj Ms</p>
-                    <p class="text-center text-sm ">Senior Secondary</p>
-                    <p class="text-center text-sm ">Team Tribune</p>
-
+                    <p class="text-center pt-1 font-semibold">
+                      Muhammed Midlaj Ms
+                    </p>
+                    <p class="text-center text-sm">Senior Secondary</p>
+                    <p class="text-center text-sm">Team Tribune</p>
                   </div>
 
                   <div class="h-full w-48 pt-[15%] inline-block relative ml-6">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" alt="" class="rounded-full h-1/2 mx-auto border-4 border-color1">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                      alt=""
+                      class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                    />
 
-                    <div class="bg-green-500 h-8 w-8 rounded-full absolute top-[15%] bigphone:top-[22%] left-[65%] pt-[.1rem]">
-                      <h1 class="text-center font-bold text-white text-lg">#1</h1>
+                    <div
+                      class="bg-green-500 h-8 w-8 rounded-full absolute top-[15%] bigphone:top-[22%] left-[65%] pt-[.1rem]"
+                    >
+                      <h1 class="text-center font-bold text-white text-lg">
+                        #1
+                      </h1>
                     </div>
 
-                    <div class="bg-green-500 h-5 rounded-full absolute top-[54%] left-[39%] bigphone:left-[32%] bigphone:top-[58%] pt-[.02rem]">
-                      <h1 class="text-center font-bold text-white text-sm px-2">SJM123</h1>
+                    <div
+                      class="bg-green-500 h-5 rounded-full absolute top-[54%] left-[39%] bigphone:left-[32%] bigphone:top-[58%] pt-[.02rem]"
+                    >
+                      <h1 class="text-center font-bold text-white text-sm px-2">
+                        SJM123
+                      </h1>
                     </div>
 
-                    <p class="text-center pt-1 font-semibold">Muhammed Midlaj Ms</p>
-                    <p class="text-center text-sm ">Senior Secondary</p>
-                    <p class="text-center text-sm ">Team Tribune</p>
-
+                    <p class="text-center pt-1 font-semibold">
+                      Muhammed Midlaj Ms
+                    </p>
+                    <p class="text-center text-sm">Senior Secondary</p>
+                    <p class="text-center text-sm">Team Tribune</p>
                   </div>
 
                   <div class="h-full w-48 pt-[15%] inline-block relative ml-6">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" alt="" class="rounded-full h-1/2 mx-auto border-4 border-color1">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                      alt=""
+                      class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                    />
 
-                    <div class="bg-green-500 h-8 w-8 rounded-full absolute top-[15%] bigphone:top-[22%] left-[65%] pt-[.1rem]">
-                      <h1 class="text-center font-bold text-white text-lg">#1</h1>
+                    <div
+                      class="bg-green-500 h-8 w-8 rounded-full absolute top-[15%] bigphone:top-[22%] left-[65%] pt-[.1rem]"
+                    >
+                      <h1 class="text-center font-bold text-white text-lg">
+                        #1
+                      </h1>
                     </div>
 
-                    <div class="bg-green-500 h-5 rounded-full absolute top-[54%] left-[39%] bigphone:left-[32%] bigphone:top-[58%] pt-[.02rem]">
-                      <h1 class="text-center font-bold text-white text-sm px-2">SJM123</h1>
+                    <div
+                      class="bg-green-500 h-5 rounded-full absolute top-[54%] left-[39%] bigphone:left-[32%] bigphone:top-[58%] pt-[.02rem]"
+                    >
+                      <h1 class="text-center font-bold text-white text-sm px-2">
+                        SJM123
+                      </h1>
                     </div>
 
-                    <p class="text-center pt-1 font-semibold">Muhammed Midlaj Ms</p>
-                    <p class="text-center text-sm ">Senior Secondary</p>
-                    <p class="text-center text-sm ">Team Tribune</p>
-
+                    <p class="text-center pt-1 font-semibold">
+                      Muhammed Midlaj Ms
+                    </p>
+                    <p class="text-center text-sm">Senior Secondary</p>
+                    <p class="text-center text-sm">Team Tribune</p>
                   </div>
 
                   <div class="h-full w-48 pt-[15%] inline-block relative ml-6">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" alt="" class="rounded-full h-1/2 mx-auto border-4 border-color1">
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                      alt=""
+                      class="rounded-full h-1/2 mx-auto border-4 border-color1"
+                    />
 
-                    <div class="bg-green-500 h-8 w-8 rounded-full absolute top-[15%] bigphone:top-[22%] left-[65%] pt-[.1rem]">
-                      <h1 class="text-center font-bold text-white text-lg">#1</h1>
+                    <div
+                      class="bg-green-500 h-8 w-8 rounded-full absolute top-[15%] bigphone:top-[22%] left-[65%] pt-[.1rem]"
+                    >
+                      <h1 class="text-center font-bold text-white text-lg">
+                        #1
+                      </h1>
                     </div>
 
-                    <div class="bg-green-500 h-5 rounded-full absolute top-[54%] left-[39%] bigphone:left-[32%] bigphone:top-[58%] pt-[.02rem]">
-                      <h1 class="text-center font-bold text-white text-sm px-2">SJM123</h1>
+                    <div
+                      class="bg-green-500 h-5 rounded-full absolute top-[54%] left-[39%] bigphone:left-[32%] bigphone:top-[58%] pt-[.02rem]"
+                    >
+                      <h1 class="text-center font-bold text-white text-sm px-2">
+                        SJM123
+                      </h1>
                     </div>
 
-                    <p class="text-center pt-1 font-semibold">Muhammed Midlaj Ms</p>
-                    <p class="text-center text-sm ">Senior Secondary</p>
-                    <p class="text-center text-sm ">Team Tribune</p>
-
+                    <p class="text-center pt-1 font-semibold">
+                      Muhammed Midlaj Ms
+                    </p>
+                    <p class="text-center text-sm">Senior Secondary</p>
+                    <p class="text-center text-sm">Team Tribune</p>
                   </div>
-
                 </div>
-              </div>
+              </div> -->
 
               <!-- end -->
-
-
             </div>
             <!-- Programs and Results -->
-            <div class="h-80 bigphone:h-[30rem] mx-auto min-h-14 min-w-6/8 w-6/8 flex gap-2">
+            <div
+              class="h-80 bigphone:h-[30rem] mx-auto min-h-14 min-w-6/8 w-6/8 flex gap-2"
+            >
               <!-- programs -->
 
               <div
@@ -495,7 +567,9 @@
 
                 <hr class="border-1 border-color1 pb-2" />
 
-                <div class="h-6 bigphone:h-10 w-full flex gap-2 items-center px-2">
+                <div
+                  class="h-6 bigphone:h-10 w-full flex gap-2 items-center px-2"
+                >
                   <button
                     class="bg-color1 h-6 bigphone:h-8 w-16 border border-color1 rounded-xl flex items-center justify-center"
                   >
@@ -503,9 +577,9 @@
                   </button>
 
                   <button
-                    class= "h-6 bigphone:h-8 w-36 justify-center border border-color1 rounded-xl flex items-center"
+                    class="h-6 bigphone:h-8 w-36 justify-center border border-color1 rounded-xl flex items-center"
                   >
-                    <p class="text-xs text-color1">Filter by</p>
+                    <p class="text-xs text-color1">Category</p>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="fill-color1"
@@ -552,18 +626,20 @@
 
                 <hr class="border-1 border-color1 mt-2" />
 
-                <div class="w-full h-[65%]  p-2 overflow-y-auto">
-                  
+                <div class="w-full h-[65%] p-2 overflow-y-auto">
                   <div
                     class="flex h-14 w-full bg-background rounded-3xl items-center justify-between px-2 mt-2"
                   >
                     <div class="flex gap-2">
-                      <p class="font-semibold text-xs bigphone:text-sm">S12JKH</p>
-                      <p class="text-xs bigphone:text-sm">Balloon Breaking MLM urdu</p>
+                      <p class="font-semibold text-xs bigphone:text-sm">
+                        S12JKH
+                      </p>
+                      <p class="text-xs bigphone:text-sm">
+                        Balloon Breaking MLM urdu
+                      </p>
                     </div>
-                    <p class=" text-xs bigphone:text-sm">Thanawiyya URD</p>
+                    <p class="text-xs bigphone:text-sm">Thanawiyya URD</p>
                   </div>
-
                 </div>
               </div>
 
@@ -594,7 +670,7 @@
                   <button
                     class="h-8 w-36 justify-center border border-color1 rounded-xl flex items-center"
                   >
-                    <p class="text-xs text-color1">Filter by</p>
+                    <p class="text-xs text-color1">Category</p>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="fill-color1"
@@ -680,27 +756,36 @@
                   </div>
                 </div>
               </div> -->
-
             </div>
 
             <!-- Quick Overview -->
-            <div class="h-44 bigphone:h-72 mx-auto min-h-14 min-w-6/8 w-6/8 flex bg-gray-100 rounded-2xl flex-col overflow-hidden">
-              <div class="h-1/4 w-full  flex items-end justify-center">
-                <h1 class="text-2xl bigphone:text-4xl font-semibold">Quick Overview</h1>
+            <div
+              class="h-44 bigphone:h-72 mx-auto min-h-14 min-w-6/8 w-6/8 flex bg-gray-100 rounded-2xl flex-col overflow-hidden"
+            >
+              <div class="h-1/4 w-full flex items-end justify-center">
+                <h1 class="text-2xl bigphone:text-4xl font-semibold">
+                  Quick Overview
+                </h1>
               </div>
 
-              <div class="h-3/4 w-full  flex justify-between px-2 gap-2 pt-3">
-                <div class="w-2/6 h-5/6 bg-gray-300 rounded-xl flex flex-col items-center justify-center leading-tight">
+              <div class="h-3/4 w-full flex justify-between px-2 gap-2 pt-3">
+                <div
+                  class="w-2/6 h-5/6 bg-gray-300 rounded-xl flex flex-col items-center justify-center leading-tight"
+                >
                   <h1 class="text-5xl bigphone:text-8xl font-bold">352</h1>
                   <h1 class="text-xs bigphone:text-lg">Results Published</h1>
                 </div>
 
-                <div class="w-2/6 h-5/6 bg-gray-300 rounded-xl flex flex-col items-center justify-center leading-tight">
+                <div
+                  class="w-2/6 h-5/6 bg-gray-300 rounded-xl flex flex-col items-center justify-center leading-tight"
+                >
                   <h1 class="text-5xl bigphone:text-8xl font-bold">352</h1>
                   <h1 class="text-xs bigphone:text-lg">Results Published</h1>
                 </div>
 
-                <div class="w-2/6 h-5/6 bg-gray-300 rounded-xl flex flex-col items-center justify-center leading-tight">
+                <div
+                  class="w-2/6 h-5/6 bg-gray-300 rounded-xl flex flex-col items-center justify-center leading-tight"
+                >
                   <h1 class="text-5xl bigphone:text-8xl font-bold">352</h1>
                   <h1 class="text-xs bigphone:text-lg">Results Published</h1>
                 </div>
@@ -710,7 +795,10 @@
         </div>
       </div>
       <!-- Desktop view -->
-      <div class="h-screen w-screen bg-background hidden lg:flex">
+      <div
+        class="h-screen w-screen bg-cover hidden lg:flex"
+        style="background-image: url('hi.jpg')"
+      >
         <!-- sidebar -->
         <div
           class="h-full 2xl:w-80 2xl:min-w-[20rem] w-80 min-w-[21rem] bg-color1 flex flex-col justify-center gap-3 pl-8"
@@ -721,13 +809,13 @@
             Page
           </h1>
           <!-- heading -->
-          <div class="flex justify-start gap-5">
+          <div class="flex justify-start gap-2">
             <h2 class="text-white font-semibold">Live Results</h2>
             <button class="h-6 bg-white border rounded-xl flex items-center">
               <p class="px-2 font-medium">All</p>
             </button>
-            <button class="h-6 border rounded-xl flex items-center">
-              <p class="px-2 text-sm text-white">Filter by</p>
+            <!-- <button class="h-6 border rounded-xl flex items-center">
+              <p class="px-2 text-sm text-white">Category</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="fill-white"
@@ -737,25 +825,34 @@
               >
                 <path d="M480-360 280-560h400L480-360Z" />
               </svg>
-            </button>
+            </button> -->
+            <select class="h-6 border rounded-xl flex items-center" name="" id="">
+              <option value="1">Category</option>
+              <option value="1">Bidaya</option>
+              <option value="1">Ula</option>
+              <option value="1">Thaniya</option>
+              <option value="1">Thanawiyyah</option>
+            </select>
           </div>
           <!-- result -->
-          <div class="w-full h-[40rem]">
+          <div class="w-full h-[25rem] 2xl:h-[40rem] flex flex-col gap-8">
             <!-- #01 -->
-            <div class="flex justfy-between h-1/4 w-full">
+            <div class="flex justfy-between h-1/6 w-full">
               <div
-                class="h-full w-3/5 px-2 font-bold leading-tight pt-3 text-white"
+                class="h-full w-1/2 px-2 font-bold leading-tight pt-3 text-white"
               >
-                <h1 class="text-2xl">#01</h1>
-                <h1 class="text-5xl">6217</h1>
+                <h1 class="text-sm 2xl:text-base">#01</h1>
+                <h1 class="text-3xl 2xl:text-5xl">6217</h1>
                 <div
-                  class="h-8 bg-green-500 rounded-xl flex items-center justify-center"
+                  class="w-28 h-5 bg-green-500 rounded-xl flex items-center justify-center"
                 >
-                  <h1 class="font-medium text-white">Team Tribune</h1>
+                  <h1 class="font-medium text-white text-xs px-2">
+                    Team Tribune
+                  </h1>
                 </div>
               </div>
               <div
-                class="h-full w-2/5 flex flex-col items-start justify-center px-3"
+                class="h-full w-1/2 flex flex-col items-start justify-start pt-5 px-3"
               >
                 <div class="flex items-center gap-2">
                   <span
@@ -770,20 +867,22 @@
               </div>
             </div>
             <!-- #02 -->
-            <div class="flex justfy-between h-1/4 w-full">
+            <div class="flex justfy-between h-1/6 w-full">
               <div
-                class="h-full w-3/5 px-2 font-bold leading-tight pt-3 text-white"
+                class="h-full w-1/2 px-2 font-bold leading-tight pt-3 text-white"
               >
-                <h1 class="text-2xl">#01</h1>
-                <h1 class="text-5xl">6217</h1>
+                <h1 class="text-sm 2xl:text-base">#01</h1>
+                <h1 class="text-3xl 2xl:text-5xl">6217</h1>
                 <div
-                  class="h-8 bg-red-500 rounded-xl flex items-center justify-center"
+                  class="w-28 h-5 bg-red-500 rounded-xl flex items-center justify-center"
                 >
-                  <h1 class="font-medium text-white">Team Chronicle</h1>
+                  <h1 class="font-medium text-white text-xs px-2">
+                    Team Chronicle
+                  </h1>
                 </div>
               </div>
               <div
-                class="h-full w-2/5 flex flex-col items-start justify-center px-3"
+                class="h-full w-1/2 flex flex-col items-start justify-start pt-5 px-3"
               >
                 <div class="flex items-center gap-2">
                   <span
@@ -798,20 +897,22 @@
               </div>
             </div>
             <!-- #03 -->
-            <div class="flex justfy-between h-1/4 w-full">
+            <div class="flex justfy-between h-1/6 w-full">
               <div
-                class="h-full w-3/5 px-2 font-bold leading-tight pt-3 text-white"
+                class="h-full w-1/2 px-2 font-bold leading-tight pt-3 text-white"
               >
-                <h1 class="text-2xl">#01</h1>
-                <h1 class="text-5xl">6217</h1>
+                <h1 class="text-sm 2xl:text-base">#01</h1>
+                <h1 class="text-3xl 2xl:text-5xl">6217</h1>
                 <div
-                  class="h-8 bg-blue-500 rounded-xl flex items-center justify-center"
+                  class="w-28 h-5 bg-blue-500 rounded-xl flex items-center justify-center"
                 >
-                  <h1 class="font-medium text-white">Team Gazette</h1>
+                  <h1 class="font-medium text-white text-xs px-2">
+                    Team Gazette
+                  </h1>
                 </div>
               </div>
               <div
-                class="h-full w-2/5 flex flex-col items-start justify-center px-3"
+                class="h-full w-1/2 flex flex-col items-start justify-start pt-5 px-3"
               >
                 <div class="flex items-center gap-2">
                   <span
@@ -826,20 +927,22 @@
               </div>
             </div>
             <!-- #04 -->
-            <div class="flex justfy-between h-1/4 w-full">
+            <div class="flex justfy-between h-1/6 w-full">
               <div
-                class="h-full w-3/5 px-2 font-bold leading-tight pt-3 text-white"
+                class="h-full w-1/2 px-2 font-bold leading-tight pt-3 text-white"
               >
-                <h1 class="text-2xl">#01</h1>
-                <h1 class="text-5xl">6217</h1>
+                <h1 class="text-sm 2xl:text-base">#01</h1>
+                <h1 class="text-3xl 2xl:text-5xl">6217</h1>
                 <div
-                  class="h-8 bg-yellow-500 rounded-xl flex items-center justify-center"
+                  class="w-28 h-5 bg-yellow-500 rounded-xl flex items-center justify-center"
                 >
-                  <h1 class="font-medium text-white">Team Herald</h1>
+                  <h1 class="font-medium text-white text-xs px-2">
+                    Team Herald
+                  </h1>
                 </div>
               </div>
               <div
-                class="h-full w-2/5 flex flex-col items-start justify-center px-3"
+                class="h-full w-1/2 flex flex-col items-start justify-start pt-5 px-3"
               >
                 <div class="flex items-center gap-2">
                   <span
@@ -856,193 +959,34 @@
           </div>
         </div>
         <!-- main content -->
-        <div
-          class="h-full w-full bg-cover pl-10 pr-10 2xl:pr-80 pb-6 flex flex-col gap-2 2xl:gap-8"
-          style="background-image: url('hi.jpg')"
-        >
-          <!-- title -->
-          <div class="h-24 w-full flex items-end">
-            <h1 class="text-5xl font-bold">#Current Status</h1>
-          </div>
-          <!-- fist row -->
-          <div class="h-1/2 w-full flex gap-10 pr-10">
-            <!-- first card first row -->
-            <div class="h-full w-[36%] 2xl:w-[50%] rounded-3xl bg-[#F7F7F7]">
-              <!-- heading -->
-              <div class="h-12">
-                <h1 class="text-3xl font-semibold px-5">Programs</h1>
-                <hr class="border" />
-              </div>
-              <!-- sort buttons -->
-              <div class="flex items-center gap-4 px-5 h-8">
-                <!-- All -->
-                <button
-                  class="bg-color1 h-6 w-16 border border-color1 rounded-xl flex items-center justify-center"
-                >
-                  <p class="text-white font-medium text-sm">All</p>
-                </button>
-                <!-- Filter by -->
-                <button
-                  class="h-6 w-36 justify-center border border-color1 rounded-xl flex items-center"
-                >
-                  <p class="text-sm text-color1">Filter by</p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="fill-color1"
-                    height="24"
-                    viewBox="0 -960 960 960"
-                    width="24"
-                  >
-                    <path d="M480-360 280-560h400L480-360Z" />
-                  </svg>
-                </button>
-                <!-- Search -->
-
-                <form
-                  class="w-full rounded-xl overflow-hidden h-6 border border-color1 flex"
-                >
-                  <div class="relative flex items-center">
-                    <div
-                      class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
-                    >
-                      <svg
-                        class="w-2 h-2 text-gray-500 dark:text-gray-400"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                        />
-                      </svg>
-                    </div>
-                    <input
-                      type="search"
-                      id="default-search"
-                      class="block w-full h-6 pl-10 text-sm text-gray-900 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                      placeholder="Search for programs..."
-                      required
-                    />
-                  </div>
-                </form>
-              </div>
-              <hr class="border" />
-              <!-- List of programs -->
-              <div
-                class="h-[75%] min-h-[75%] overflow-y-auto flex flex-col gap-2 items-center px-3 mt-3"
-              >
-                <!-- list 1 -->
-                <div
-                  class="flex items-center h-14 min-h-[3.5rem] w-full text-xs bg-[#F6DEFF] rounded-xl justify-around px-3"
-                >
-                  <p class="font-bold">S12JKH</p>
-                  <p>Balloon Breaking MLM Urdu</p>
-                  <p class="font-bold">Thanawiyya Urdu</p>
-                </div>
-                <!-- list 2 -->
-                <div
-                  class="flex items-center h-14 min-h-[3.5rem] w-full text-xs bg-[#F6DEFF] rounded-xl justify-around px-3"
-                >
-                  <p class="font-bold">S12JKH</p>
-                  <p>Balloon Breaking MLM Urdu</p>
-                  <p class="font-bold">Thanawiyya Urdu</p>
-                </div>
-              </div>
-              <!-- end of lists -->
+        <div class="overflow-y-auto w-full ">
+          <div class="h-full w-full bg-cover pl-10 flex flex-col gap-2 2xl:gap-8 mt-[10rem] pr-10">
+            <!-- title -->
+            <div class="h-24 w-full flex items-end">
+              <h1 class="text-5xl font-bold">#Current Status</h1>
             </div>
-
-            <!-- second card first row -->
-            <div class="h-full w-[36%] 2xl:w-[50%] rounded-3xl bg-[#F7F7F7]">
-              <!-- heading -->
-              <div class="h-12">
-                <h1 class="text-3xl font-semibold px-5">Programs</h1>
-                <hr class="border" />
-              </div>
-              <!-- sort buttons -->
-              <div class="flex items-center gap-4 pl-5 pr-10 h-8">
-                <!-- All -->
-                <button
-                  class="bg-color1 h-6 border border-color1 rounded-xl flex items-center justify-center"
-                >
-                  <p class="text-white px-2 font-medium text-sm">All</p>
-                </button>
-                <!-- Tribune -->
-                <button
-                  class="h-6 border border-color1 rounded-xl flex items-center justify-center"
-                >
-                  <p class="text-color1 px-2 font-medium text-sm">Tribune</p>
-                </button>
-                <!-- Chronicle -->
-                <button
-                  class="h-6 border border-color1 rounded-xl flex items-center justify-center"
-                >
-                  <p class="text-color1 px-2 font-medium text-sm">Chronicle</p>
-                </button>
-                <!-- Gazette -->
-                <button
-                  class="h-6 border border-color1 rounded-xl flex items-center justify-center"
-                >
-                  <p class="text-color1 px-2 font-medium text-sm">Gazette</p>
-                </button>
-                <!-- Herald -->
-                <button
-                  class="h-6 border border-color1 rounded-xl flex items-center justify-center"
-                >
-                  <p class="text-color1 px-2 font-medium text-sm">Herald</p>
-                </button>
-                <!-- The End -->
-              </div>
-              <hr class="border" />
-              <!-- List of programs -->
-              <div
-                class="h-[75%] min-h-[75%] overflow-y-auto flex flex-col gap-2 items-center px-5 mt-3"
-              >
-                <!-- list 1 -->
-                <div class="flex w-full items-center h-14">
-                  <img
-                    src="https://riaindia.co.in/wp-content/uploads/2016/01/tutor-8.jpg"
-                    alt=""
-                    class="h-12 w-12 rounded-full absolute border -ml-4"
-                  />
-                  <div
-                    class="flex items-center h-14 min-h-[3.5rem] w-full text-xs bg-[#F6DEFF] rounded-xl justify-around pl-5"
-                  >
-                    <p>1st</p>
-                    <p>S123</p>
-                    <p>Muahammed Arshad</p>
-                    <p>Chronicle</p>
-                    <p>A</p>
-                  </div>
+            <!-- fist row -->
+            <div class=" w-full flex gap-10 ">
+              <!-- first card first row -->
+              <div class="h-[43rem] w-[50%] 2xl:w-[50%] rounded-3xl bg-[#F7F7F7]">
+                <!-- heading -->
+                <div class="h-12">
+                  <h1 class="text-3xl font-semibold px-5">Programs</h1>
+                  <hr class="border" />
                 </div>
-              </div>
-              <!-- end of lists -->
-            </div>
-          </div>
-
-          <!-- second row -->
-          <div class="h-[30%] 2xl:h-[26%] w-full flex gap-10 pr-10">
-            <!-- first card second row -->
-            <div
-              class="2xl:w-[40%] w-[32%] rounded-3xl bg-[#F7F7F7] px-5 overflow-hidden"
-            >
-              <!-- title -->
-              <div class="w-full h-[20%] flex items-center justify-between">
-                <h1 class="text-xl font-semibold leading-none">#Leading Now</h1>
-                <div class="flex gap-2 h-full items-center">
+                <!-- sort buttons -->
+                <div class="flex items-center gap-4 px-5 h-16">
+                  <!-- All -->
                   <button
-                    class="h-6 bg-color1 border border-color1 rounded-xl flex items-center"
+                    class="bg-color1 h-6 w-16 border border-color1 rounded-xl flex items-center justify-center"
                   >
-                    <p class="px-2 font-medium text-white text-sm">All</p>
+                    <p class="text-white font-medium text-sm">All</p>
                   </button>
-                  <button
-                    class="h-6 border border-color1 rounded-xl flex items-center"
+                  <!-- Category -->
+                  <!-- <button
+                    class="h-6 w-36 justify-center border border-color1 rounded-xl flex items-center"
                   >
-                    <p class="px-2 text -sm text-color1">Filter by</p>
+                    <p class="text-sm text-color1">Category</p>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="fill-color1"
@@ -1052,191 +996,387 @@
                     >
                       <path d="M480-360 280-560h400L480-360Z" />
                     </svg>
-                  </button>
+                  </button> -->
+                  <select class="h-6 justify-center border border-color1 rounded-xl flex items-center"  name="" id="">
+                    <option value="1">Category</option>
+                    <option value="1">Bidaya</option>
+                    <option value="1">Ula</option>
+                    <option value="1">Thaniya</option>
+                    <option value="1">Thanawiyyah</option>
+                  </select>
+                  <!-- Search -->
+
+                  <form
+                    class="w-full rounded-xl overflow-hidden h-6 border border-color1 flex"
+                  >
+                    <div class="relative flex items-center w-full">
+                      <div
+                        class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+                      >
+                        <svg
+                          class="w-2 h-2 text-gray-500 dark:text-gray-400"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                          />
+                        </svg>
+                      </div>
+                      <input
+                        type="search"
+                        id="default-search"
+                        class="block w-full h-6 pl-10 text-sm text-gray-900 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search for programs..."
+                        required
+                      />
+                    </div>
+                  </form>
                 </div>
+                <hr class="border" />
+                <!-- List of programs -->
+                <div
+                  class="h-[75%] min-h-[75%] overflow-y-auto flex flex-col gap-2 items-center px-3 mt-3"
+                >
+                  <!-- list 1 -->
+                  <div
+                    class="flex items-center h-14 min-h-[3.5rem] w-full text-xs bg-[#F6DEFF] rounded-xl justify-around px-3"
+                  >
+                    <p class="font-bold">S12JKH</p>
+                    <p>Balloon Breaking MLM Urdu</p>
+                    <p class="font-bold">Thanawiyya Urdu</p>
+                  </div>
+                  <!-- list 2 -->
+                  <div
+                    class="flex items-center h-14 min-h-[3.5rem] w-full text-xs bg-[#F6DEFF] rounded-xl justify-around px-3"
+                  >
+                    <p class="font-bold">S12JKH</p>
+                    <p>Balloon Breaking MLM Urdu</p>
+                    <p class="font-bold">Thanawiyya Urdu</p>
+                  </div>
+                </div>
+                <!-- end of lists -->
               </div>
-              <!-- Photos -->
-              <div
-                class="h-[80%] w-full overflow-x-scroll whitespace-nowrap overflow-y-hidden"
-              >
-                <!-- 1st -->
-                <div class="h-full w-44 inline-block">
-                  <div class="relative left-1/4 top-[1%]">
+
+              <!-- second card first row -->
+              <div class="h-[43rem] w-[50%] 2xl:w-[50%] rounded-3xl bg-[#F7F7F7]">
+                <!-- heading -->
+                <div class="h-12">
+                  <h1 class="text-3xl font-semibold px-5">Programs</h1>
+                  <hr class="border" />
+                </div>
+                <!-- sort buttons -->
+                <div class="flex items-center gap-2 pl-5 pr-10 h-16 flex-wrap">
+                  <!-- All -->
+                  <button
+                    class="bg-color1 h-6 border border-color1 rounded-xl flex items-center justify-center"
+                  >
+                    <p class="text-white px-2 font-medium text-sm">All</p>
+                  </button>
+                  <!-- Tribune -->
+                  <button
+                    class="h-6 border border-color1 rounded-xl flex items-center justify-center"
+                  >
+                    <p class="text-color1 px-2 font-medium text-sm">Tribune</p>
+                  </button>
+                  <!-- Chronicle -->
+                  <button
+                    class="h-6 border border-color1 rounded-xl flex items-center justify-center"
+                  >
+                    <p class="text-color1 px-2 font-medium text-sm">
+                      Chronicle
+                    </p>
+                  </button>
+                  <!-- Gazette -->
+                  <button
+                    class="h-6 border border-color1 rounded-xl flex items-center justify-center"
+                  >
+                    <p class="text-color1 px-2 font-medium text-sm">Gazette</p>
+                  </button>
+                  <!-- Herald -->
+                  <button
+                    class="h-6 border border-color1 rounded-xl flex items-center justify-center"
+                  >
+                    <p class="text-color1 px-2 font-medium text-sm">Herald</p>
+                  </button>
+                  <!-- The End -->
+                </div>
+                <hr class="border" />
+                <!-- List of programs -->
+                <div
+                  class="h-[75%] min-h-[75%] overflow-y-auto flex flex-col gap-2 items-center px-5 mt-3"
+                >
+                  <!-- list 1 -->
+                  <div class="flex w-full items-center h-14 relative">
                     <img
-                      class="w-28 h-28 rounded-full border-color1 border"
-                      src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                      src="https://riaindia.co.in/wp-content/uploads/2016/01/tutor-8.jpg"
                       alt=""
+                      class="h-12 w-12 rounded-full absolute border -ml-4"
                     />
-                    <span
-                      class="top-0 left-[4.9rem] absolute h-6 w-6 bg-[#28B77B] rounded-full text-xs font-medium text-white flex items-center justify-center"
-                      ><h1 class="px-1">#1</h1></span
+                    <div
+                      class="flex items-center h-14 min-h-[3.5rem] w-full text-xs bg-[#F6DEFF] rounded-xl justify-around pl-5"
                     >
-                    <span
-                      class="top-[6rem] left-[1.9rem] absolute h-5 bg-[#28B77B] rounded-lg text-[10px] font-medium text-white flex items-center"
-                      ><h1 class="px-1">#SMJ123</h1></span
-                    >
-                    <p
-                      class="absolute text-xs font-semibold left-[-.3rem] top-[7.3rem]"
-                    >
-                      Muhammed Midlaj Av
-                    </p>
-                    <p class="absolute text-xs left-[.5rem] top-[8.3rem]">
-                      Senior Secondary
-                    </p>
-                    <p class="absolute text-[10px] left-[1.3rem] top-[9.2rem]">
-                      Team Chronicle
-                    </p>
+                      <p>1st</p>
+                      <p>S123</p>
+                      <p>Muahammed Arshad</p>
+                      <p>Chronicle</p>
+                      <p>A</p>
+                    </div>
                   </div>
                 </div>
-                <!-- 2nd -->
-                <div class="h-full w-52 inline-block">
-                  <div class="relative left-1/4 top-[1%]">
-                    <img
-                      class="w-28 h-28 rounded-full border-color1 border"
-                      src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                      alt=""
-                    />
-                    <span
-                      class="top-0 left-[4.9rem] absolute h-6 w-6 bg-[#28B77B] rounded-full text-xs font-medium text-white flex items-center justify-center"
-                      ><h1 class="px-1">#2</h1></span
-                    >
-                    <span
-                      class="top-[6rem] left-[1.9rem] absolute h-5 bg-[#28B77B] rounded-lg text-[10px] font-medium text-white flex items-center"
-                      ><h1 class="px-1">#SMJ123</h1></span
-                    >
-                    <p
-                      class="absolute text-xs font-semibold left-[-.3rem] top-[7.3rem]"
-                    >
-                      Muhammed Midlaj Av
-                    </p>
-                    <p class="absolute text-xs left-[.5rem] top-[8.3rem]">
-                      Senior Secondary
-                    </p>
-                    <p class="absolute text-[10px] left-[1.3rem] top-[9.2rem]">
-                      Team Chronicle
-                    </p>
-                  </div>
-                </div>
-                <!-- 3rd -->
-                <div class="h-full w-52 inline-block">
-                  <div class="relative left-1/4 top-[1%]">
-                    <img
-                      class="w-28 h-28 rounded-full border-color1 border"
-                      src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                      alt=""
-                    />
-                    <span
-                      class="top-0 left-[4.9rem] absolute h-6 w-6 bg-[#28B77B] rounded-full text-xs font-medium text-white flex items-center justify-center"
-                      ><h1 class="px-1">#3</h1></span
-                    >
-                    <span
-                      class="top-[6rem] left-[1.9rem] absolute h-5 bg-[#28B77B] rounded-lg text-[10px] font-medium text-white flex items-center"
-                      ><h1 class="px-1">#SMJ123</h1></span
-                    >
-                    <p
-                      class="absolute text-xs font-semibold left-[-.3rem] top-[7.3rem]"
-                    >
-                      Muhammed Midlaj Av
-                    </p>
-                    <p class="absolute text-xs left-[.5rem] top-[8.3rem]">
-                      Senior Secondary
-                    </p>
-                    <p class="absolute text-[10px] left-[1.3rem] top-[9.2rem]">
-                      Team Chronicle
-                    </p>
-                  </div>
-                </div>
-                <!-- 4th -->
-                <div class="h-full w-52 inline-block">
-                  <div class="relative left-1/4 top-[1%]">
-                    <img
-                      class="w-28 h-28 rounded-full border-color1 border"
-                      src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                      alt=""
-                    />
-                    <span
-                      class="top-0 left-[4.9rem] absolute h-6 w-6 bg-[#28B77B] rounded-full text-xs font-medium text-white flex items-center justify-center"
-                      ><h1 class="px-1">#4</h1></span
-                    >
-                    <span
-                      class="top-[6rem] left-[1.9rem] absolute h-5 bg-[#28B77B] rounded-lg text-[10px] font-medium text-white flex items-center"
-                      ><h1 class="px-1">#SMJ123</h1></span
-                    >
-                    <p
-                      class="absolute text-xs font-semibold left-[-.3rem] top-[7.3rem]"
-                    >
-                      Muhammed Midlaj Av
-                    </p>
-                    <p class="absolute text-xs left-[.5rem] top-[8.3rem]">
-                      Senior Secondary
-                    </p>
-                    <p class="absolute text-[10px] left-[1.3rem] top-[9.2rem]">
-                      Team Chronicle
-                    </p>
-                  </div>
-                </div>
-                <!-- 5th -->
-                <div class="h-full w-52 inline-block">
-                  <div class="relative left-1/4 top-[1%]">
-                    <img
-                      class="w-28 h-28 rounded-full border-color1 border"
-                      src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                      alt=""
-                    />
-                    <span
-                      class="top-0 left-[4.9rem] absolute h-6 w-6 bg-[#28B77B] rounded-full text-xs font-medium text-white flex items-center justify-center"
-                      ><h1 class="px-1">#5</h1></span
-                    >
-                    <span
-                      class="top-[6rem] left-[1.9rem] absolute h-5 bg-[#28B77B] rounded-lg text-[10px] font-medium text-white flex items-center"
-                      ><h1 class="px-1">#SMJ123</h1></span
-                    >
-                    <p
-                      class="absolute text-xs font-semibold left-[-.3rem] top-[7.3rem]"
-                    >
-                      Muhammed Midlaj Av
-                    </p>
-                    <p class="absolute text-xs left-[.5rem] top-[8.3rem]">
-                      Senior Secondary
-                    </p>
-                    <p class="absolute text-[10px] left-[1.3rem] top-[9.2rem]">
-                      Team Chronicle
-                    </p>
-                  </div>
-                </div>
+                <!-- end of lists -->
               </div>
             </div>
-
-            <!-- second card second row -->
-            <div
-              class="h-full 2xl:w-[60%] w-[40%] rounded-3xl bg-[#F7F7F7] px-5"
-            >
-              <!-- title -->
-              <div class="w-full h-[20%] flex items-center justify-center">
-                <h1 class="text-xl font-bold leading-none">Leading Now</h1>
+            <!-- second row -->
+            <div class="h-[50%] 2xl:h-[25%] w-full flex gap-10 ">
+              <!-- first card second row -->
+              <div class="2xl:w-[40%] w-[50%] rounded-3xl bg-[#F7F7F7] px-5 overflow-hidden h-[16rem]">
+                <!-- title -->
+                <div class="w-full h-[20%] flex items-center justify-between">
+                  <h1 class="text-xl font-semibold leading-none">
+                    #Leading Now
+                  </h1>
+                  <div class="flex gap-2 h-full items-center">
+                    <button
+                      class="h-6 bg-color1 border border-color1 rounded-xl flex items-center"
+                    >
+                      <p class="px-2 font-medium text-white text-sm">All</p>
+                    </button>
+                    <!-- <button
+                      class="h-6 border border-color1 rounded-xl flex items-center"
+                    >
+                      <p class="px-2 text -sm text-color1">Category</p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-color1"
+                        height="24"
+                        viewBox="0 -960 960 960"
+                        width="24"
+                      >
+                        <path d="M480-360 280-560h400L480-360Z" />
+                      </svg>
+                    </button> -->
+                    <select class="h-6 border border-color1 rounded-xl flex items-center" name="" id="">
+                      <option value="1">Category</option>
+                      <option value="1">Bidaya</option>
+                      <option value="1">Ula</option>
+                      <option value="1">Thaniya</option>
+                      <option value="1">Thanawiyyah</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- Photos -->
+                <div
+                  class="h-[80%] w-full overflow-x-scroll whitespace-nowrap overflow-y-hidden"
+                >
+                  <!-- 1st -->
+                  <div class="h-full w-44 inline-block">
+                    <div class="relative left-1/4 top-[1%]">
+                      <img
+                        class="2xl:w-28 2xl:h-28 w-20 h-20 rounded-full border-color1 border"
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        alt=""
+                      />
+                      <span
+                        class="top-0 2xl:left-[4.9rem] left-[3.8rem] absolute h-6 w-6 bg-[#28B77B] rounded-full text-xs font-medium text-white flex items-center justify-center"
+                        ><h1 class="px-1">#1</h1></span
+                      >
+                      <span
+                        class="2xl:top-[6rem] 2xl:left-[1.9rem] top-[4.3rem] left-[.9rem] absolute h-5 bg-[#28B77B] rounded-lg text-[10px] font-medium text-white flex items-center"
+                        ><h1 class="px-1">#SMJ123</h1></span
+                      >
+                      <p
+                        class="absolute text-xs font-semibold 2xl:left-[-.3rem] 2xl:top-[7.3rem] left-[-1.3rem] top-[5.5rem]"
+                      >
+                        Muhammed Midlaj Av
+                      </p>
+                      <p
+                        class="absolute text-xs 2xl:left-[.5rem] 2xl:top-[8.3rem] left-[-.5rem] top-[6.2rem]"
+                      >
+                        Senior Secondary
+                      </p>
+                      <p
+                        class="absolute text-[10px] 2xl:left-[1.3rem] 2xl:top-[9.2rem] top-[7.1rem]"
+                      >
+                        Team Chronicle
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 2nd -->
+                  <div class="h-full w-52 inline-block">
+                    <div class="relative left-1/4 top-[1%]">
+                      <img
+                        class="2xl:w-28 2xl:h-28 w-20 h-20 rounded-full border-color1 border"
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        alt=""
+                      />
+                      <span
+                        class="top-0 2xl:left-[4.9rem] left-[3.8rem] absolute h-6 w-6 bg-[#28B77B] rounded-full text-xs font-medium text-white flex items-center justify-center"
+                        ><h1 class="px-1">#2</h1></span
+                      >
+                      <span
+                        class="2xl:top-[6rem] 2xl:left-[1.9rem] top-[4.3rem] left-[.9rem] absolute h-5 bg-[#28B77B] rounded-lg text-[10px] font-medium text-white flex items-center"
+                        ><h1 class="px-1">#SMJ123</h1></span
+                      >
+                      <p
+                        class="absolute text-xs font-semibold 2xl:left-[-.3rem] 2xl:top-[7.3rem] left-[-1.3rem] top-[5.5rem]"
+                      >
+                        Muhammed Midlaj Av
+                      </p>
+                      <p
+                        class="absolute text-xs 2xl:left-[.5rem] 2xl:top-[8.3rem] left-[-.5rem] top-[6.2rem]"
+                      >
+                        Senior Secondary
+                      </p>
+                      <p
+                        class="absolute text-[10px] 2xl:left-[1.3rem] 2xl:top-[9.2rem] top-[7.1rem]"
+                      >
+                        Team Chronicle
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 3rd -->
+                  <div class="h-full w-52 inline-block">
+                    <div class="relative left-1/4 top-[1%]">
+                      <img
+                        class="2xl:w-28 2xl:h-28 w-20 h-20 rounded-full border-color1 border"
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        alt=""
+                      />
+                      <span
+                        class="top-0 2xl:left-[4.9rem] left-[3.8rem] absolute h-6 w-6 bg-[#28B77B] rounded-full text-xs font-medium text-white flex items-center justify-center"
+                        ><h1 class="px-1">#3</h1></span
+                      >
+                      <span
+                        class="2xl:top-[6rem] 2xl:left-[1.9rem] top-[4.3rem] left-[.9rem] absolute h-5 bg-[#28B77B] rounded-lg text-[10px] font-medium text-white flex items-center"
+                        ><h1 class="px-1">#SMJ123</h1></span
+                      >
+                      <p
+                        class="absolute text-xs font-semibold 2xl:left-[-.3rem] 2xl:top-[7.3rem] left-[-1.3rem] top-[5.5rem]"
+                      >
+                        Muhammed Midlaj Av
+                      </p>
+                      <p
+                        class="absolute text-xs 2xl:left-[.5rem] 2xl:top-[8.3rem] left-[-.5rem] top-[6.2rem]"
+                      >
+                        Senior Secondary
+                      </p>
+                      <p
+                        class="absolute text-[10px] 2xl:left-[1.3rem] 2xl:top-[9.2rem] top-[7.1rem]"
+                      >
+                        Team Chronicle
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 4th -->
+                  <div class="h-full w-52 inline-block">
+                    <div class="relative left-1/4 top-[1%]">
+                      <img
+                        class="2xl:w-28 2xl:h-28 w-20 h-20 rounded-full border-color1 border"
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        alt=""
+                      />
+                      <span
+                        class="top-0 2xl:left-[4.9rem] left-[3.8rem] absolute h-6 w-6 bg-[#28B77B] rounded-full text-xs font-medium text-white flex items-center justify-center"
+                        ><h1 class="px-1">#4</h1></span
+                      >
+                      <span
+                        class="2xl:top-[6rem] 2xl:left-[1.9rem] top-[4.3rem] left-[.9rem] absolute h-5 bg-[#28B77B] rounded-lg text-[10px] font-medium text-white flex items-center"
+                        ><h1 class="px-1">#SMJ123</h1></span
+                      >
+                      <p
+                        class="absolute text-xs font-semibold 2xl:left-[-.3rem] 2xl:top-[7.3rem] left-[-1.3rem] top-[5.5rem]"
+                      >
+                        Muhammed Midlaj Av
+                      </p>
+                      <p
+                        class="absolute text-xs 2xl:left-[.5rem] 2xl:top-[8.3rem] left-[-.5rem] top-[6.2rem]"
+                      >
+                        Senior Secondary
+                      </p>
+                      <p
+                        class="absolute text-[10px] 2xl:left-[1.3rem] 2xl:top-[9.2rem] top-[7.1rem]"
+                      >
+                        Team Chronicle
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 5th -->
+                  <div class="h-full w-44 inline-block">
+                    <div class="relative left-1/4 top-[1%]">
+                      <img
+                        class="2xl:w-28 2xl:h-28 w-20 h-20 rounded-full border-color1 border"
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        alt=""
+                      />
+                      <span
+                        class="top-0 2xl:left-[4.9rem] left-[3.8rem] absolute h-6 w-6 bg-[#28B77B] rounded-full text-xs font-medium text-white flex items-center justify-center"
+                        ><h1 class="px-1">#5</h1></span
+                      >
+                      <span
+                        class="2xl:top-[6rem] 2xl:left-[1.9rem] top-[4.3rem] left-[.9rem] absolute h-5 bg-[#28B77B] rounded-lg text-[10px] font-medium text-white flex items-center"
+                        ><h1 class="px-1">#SMJ123</h1></span
+                      >
+                      <p
+                        class="absolute text-xs font-semibold 2xl:left-[-.3rem] 2xl:top-[7.3rem] left-[-1.3rem] top-[5.5rem]"
+                      >
+                        Muhammed Midlaj Av
+                      </p>
+                      <p
+                        class="absolute text-xs 2xl:left-[.5rem] 2xl:top-[8.3rem] left-[-.5rem] top-[6.2rem]"
+                      >
+                        Senior Secondary
+                      </p>
+                      <p
+                        class="absolute text-[10px] 2xl:left-[1.3rem] 2xl:top-[9.2rem] top-[7.1rem]"
+                      >
+                        Team Chronicle
+                      </p>
+                    </div>
+                  </div>
+                  <!-- end -->
+                </div>
               </div>
-              <!-- small cards -->
-              <div class="h-[80%] w-full flex gap-5 items-center">
-                <!-- small card1 -->
-                <div
-                  class="h-4/6 w-1/3 bg-background rounded-2xl flex flex-col items-center leading-tight"
-                >
-                  <h1 class="text-[4rem] font-bold">123</h1>
-                  <h1 class="text-sm">Result Published</h1>
+
+              <!-- second card second row -->
+              <div
+                class="h-[16rem] 2xl:w-[60%] w-[50%] rounded-3xl bg-[#F7F7F7] px-5"
+              >
+                <!-- title -->
+                <div class="w-full h-[20%] flex items-center justify-center">
+                  <h1 class="text-2xl font-bold leading-none">Leading Now</h1>
                 </div>
-                <!-- small card2 -->
+                <!-- small cards -->
                 <div
-                  class="h-4/6 w-1/3 bg-background rounded-2xl flex flex-col items-center leading-tight"
+                  class="h-[80%] w-full flex gap-5 items-center justify-center"
                 >
-                  <h1 class="text-[4rem] font-bold">123</h1>
-                  <h1 class="text-sm">Result Published</h1>
-                </div>
-                <!-- small card3 -->
-                <div
-                  class="h-4/6 w-1/3 bg-background rounded-2xl flex flex-col items-center leading-tight"
-                >
-                  <h1 class="text-[4rem] font-bold">123</h1>
-                  <h1 class="text-sm">Result Published</h1>
+                  <!-- small card1 -->
+                  <div
+                    class="h-4/6 w-1/4 bg-background rounded-2xl flex flex-col items-center leading-tight pt-5"
+                  >
+                    <h1 class="text-[3rem] 2xl:text-7xl font-bold">123</h1>
+                    <h1 class="text-xs">Result Published</h1>
+                  </div>
+                  <!-- small card2 -->
+                  <div
+                    class="h-4/6 w-1/4 bg-background rounded-2xl flex flex-col items-center leading-tight pt-5"
+                  >
+                    <h1 class="text-[3rem] 2xl:text-7xl font-bold">123</h1>
+                    <h1 class="text-xs">Result Published</h1>
+                  </div>
+                  <!-- small card3 -->
+                  <div
+                    class="h-4/6 w-1/4 bg-background rounded-2xl flex flex-col items-center leading-tight pt-5"
+                  >
+                    <h1 class="text-[3rem] 2xl:text-7xl font-bold">123</h1>
+                    <h1 class="text-xs">Result Published</h1>
+                  </div>
                 </div>
               </div>
             </div>
