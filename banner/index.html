@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @font-face {
+        font-family: surimi;
+        src: url ("./surimi.ttf");
+      }
+    </style>
+  </head>
+  <body>
+    <div class="opacity-50">
+      <div class=" w-full overflow-hidden flex text-8xl font-black gap-2 text-color1 items-end  bg-background transition-all duration-500" style="font-family: surimi;">
+        <h1 class="-ml-24 opacity-50">REALIA'23</h1>
+        <h1>REALIA'23</h1>
+        <h1 class="opacity-50">REALIA'23</h1>
+        <h1 class="opacity-50">REALIA'23</h1>
+        <h1 class="opacity-50">REALIA'23</h1>
+        <h1 >REALIA'23</h1>
+        <h1 class="opacity-50">REALIA'23</h1>
+        <h1 class="opacity-50">REALIA'23</h1>
+        <h1 class="opacity-50">REALIA'23</h1>
+        <h1 >REALIA'23</h1>
+        <h1 class="opacity-50">REALIA'23</h1>
+      </div>
+      <div class=" w-full overflow-hidden flex text-sm gap-1 text-color1 items-end  bg-background transition-all duration-500 -ml-5" id="small">
+      </div>
+      <script>
+        var text = document.getElementById("small")
+        text.innerHTML = `<div class="flex gap-[3px]">
+          <h1 class="font-medium">DHIU</h1>
+          <h1 class="font-medium">UG</h1>
+          <h1>Art</h1>
+          <h1>Fest</h1>
+        </div>`.repeat(50)
+      </script>
+    </div>
+  </body>
+</html>
