@@ -49,6 +49,14 @@
 
   <body class="bg-background">
     <main class="font-sans h-screen overflow-hidden flex">
+      <button
+        type="button"
+        data-te-ripple-init
+        data-te-ripple-color="light"
+        class="inline-block fixed top-5 right-8 bg-white hover:bg-gray-300 rounded-full md:bg-promary p-2 uppercase leading-normal text-white md:shadow-black shadow-white shadow-[0_4px_9px_-4px_#3b71ca] md:hover:bg-secondary transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+      >
+      <svg class="h-6 w-6 md:fill-white fill-primary" viewBox="0 -960 960 960"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+      </button>
       <!-- Student -->
       <div
         class="h-screen md:w-72 md:min-w-72 lg:w-96 lg:min-w-96 w-screen bg-color1 overflow-hidden md:flex md:flex-col md:justify-between md:items-center hidden md:block"
@@ -496,7 +504,9 @@
               <div class="h-[10%]">
                 <hr />
                 <div class="h-full w-full">
-                  <div class="h-full w-full items-center flex gap-5 justify-center">
+                  <div
+                    class="h-full w-full items-center flex gap-5 justify-center"
+                  >
                     <div
                       class="bg-color1 border h-6 flex items-center rounded-2xl"
                     >
@@ -543,7 +553,6 @@
                     <p class="text-tn">3pts</p>
                   </div>
                 </div>
-                
               </div>
             </div>
           </div>
